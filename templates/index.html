@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="title">
+	<img src="/static/img/banner2.gif">
+</div>
+
+<div class="short_intro">
+	<h3>Learner. Dreamer. (dark) chocolate addict!</h3>
+</div>
+
+<div class="pages_links">
+	<a href="{{url_for("aboutme")}}" class="btn">About me</a>
+	<img src="/static/img/compass2.gif">
+</div>
+
+<div class="follow_me">
+	<div class="container">
+		
+		<div class="widget_twitter">
+			<h4>I share my thoughts on Twitter...</h4><br>
+			<a class="twitter-timeline"  href="https://twitter.com/EleonoreMayola"  data-widget-id="318815938969477120">Tweets by @EleonoreMayola</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+
+
+		<div class="widget_pinterest">
+			<h4>... and my taste on Pinterest.</h4><br>
+			<a data-pin-do="embedUser" href="http://pinterest.com/eleonore9"></a>
+		</div>	
+
+	</div>
+</div>
+
+
+<div class="footer">
+	<p>
+		Copyright 2013 - <a href="https://twitter.com/eleonoremayola">Eleonore</a>
+	</p>
+	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+</div>
+
+{% endblock %}
