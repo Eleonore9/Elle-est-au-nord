@@ -10,12 +10,17 @@
 </div>
 
 <div class="pages_links">
-	<a href="{{url_for("aboutme")}}" class="btn">About me</a>
-	<img src="/static/img/compass2.gif">
+	<div class="link_about">
+		<a href="{{url_for("aboutme")}}" class="btn">About me</a>
+	</div>
+		<img src="/static/img/compass2.gif">	
+	<div class="link_projects">
+		<a href="{{url_for("projects")}}" class="btn">Projects</a>
+	</div>
 </div>
 
 <div class="follow_me">
-	<div class="container">
+	<!-- <div class="container"> -->
 		
 		<div class="widget_twitter">
 			<h4>I share my thoughts on Twitter...</h4><br>
@@ -27,9 +32,10 @@
 		<div class="widget_pinterest">
 			<h4>... and my taste on Pinterest.</h4><br>
 			<a data-pin-do="embedUser" href="http://pinterest.com/eleonore9"></a>
+			<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 		</div>	
 
-	</div>
+	<!-- </div> -->
 </div>
 
 
@@ -37,7 +43,7 @@
 	<p>
 		Copyright 2013 - <a href="https://twitter.com/eleonoremayola">Eleonore</a>
 	</p>
-	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+	
 </div>
 
 {% endblock %}

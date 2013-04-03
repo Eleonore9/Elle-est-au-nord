@@ -1,0 +1,4 @@
+*.pyc
+env/
+build/
+requirements.txt

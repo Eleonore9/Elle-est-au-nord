@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="title">
+	<img src="/static/img/banner2.gif">
+</div>
+
+<div class="name_intro">
+	<h3>Projects</h3>
+</div>
+
+<div class="about_content">
+	<!-- <div class="container"> -->
+		<h5>
+			Here are links to my projects on <a href="https://github.com/Eleonore9" class="btn">Github</a> 
+			and <a href="https://bitbucket.org/eleonore9" class="btn">Bitbucket</a>.
+		</h5><br>
+		
+	<!-- </div> -->
+</div>
+
+
+
+<div class="btn_to_homepage" style="margin-left: 40%">
+	<a href="{{url_for("index")}}" class="btn">Back to homepage</a>
+</div>
+
+<div class="footer">
+	<p>
+		Copyright 2013 - <a href="https://twitter.com/eleonoremayola">Eleonore</a>
+	</p>
+	<!-- <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script> -->
+</div>
+
+{% endblock %}
