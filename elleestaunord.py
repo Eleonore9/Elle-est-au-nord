@@ -9,7 +9,9 @@ from flask import url_for, session, send_from_directory
 
 app = Flask(__name__)
 app.secret_key = 'this_is_my_not_so_secret_key'
-
+app.config.update(
+    DEBUG = True,
+)
 
 @app.route("/")
 def index():
@@ -24,6 +26,7 @@ def projects():
 	return render_template("projects.html")
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
