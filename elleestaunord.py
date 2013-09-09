@@ -13,6 +13,7 @@ app.config.update(
 	DEBUG = True,
 )
 
+# Simple site: just 3 routes for the Hone page and 2 pages
 @app.route("/")
 def index():
 	return render_template("index.html")
