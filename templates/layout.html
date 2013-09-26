@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<title>Elle est au nord.</title>
 
-		<!-- links for Bootstrap CSS, my CSS file and my favicon -->
+		<!-- links for Bootstrap CSS/JS, my CSS file and my favicon -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="static/css/bootstrap.min.css"
 		type="text/css">
@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="static/css/ele.css"
 		type="text/css">
 		<link rel="icon" type="image/png" href="/static/img/favicon.png" />
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
 	
 	        <!-- code for Google Analytics -->
 		<script type="text/javascript">
@@ -30,8 +32,37 @@
 	</head>
 
 	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="{{url_for("index")}}">Eléonore</a>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li><a href="{{url_for("index")}}">Home</a></li>
+							<li><a href="{{url_for("aboutme")}}">About</a></li>
+							<li><a href="{{url_for("projects")}}">Projects</a></li>
+							<!--<li class="twitter"><a href="https://twitter.com/eleonoremayola">
+								<img alt="Twitter logo" src="static/img/twitter-bird-light-bgs.png"></img>							
+							</a></li>-->
+							<!--<li class="pinterest"><a href="http://www.pinterest.com/eleonore9/">
+								<img alt="Pinterest logo" src="static/img/pinterest_badge_red.png"></img>
+							</a></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container">
-			{% block body %}{% endblock %}
+			<div class="row">
+				<div class="span12">
+					{% block body %}{% endblock %}
+				</div>
+			</div>
 		</div>
 			
 	</body>

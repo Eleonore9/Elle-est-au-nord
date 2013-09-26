@@ -1,7 +1,7 @@
 /* -------------- AT THE TOP ------------- */
 .title {
 	/*border: 1px solid green;*/
-	margin-top: 1%;
+	margin-top: 5%;
 	margin-left: 30%;
 }
 .title img {
@@ -47,7 +47,13 @@
 	margin-left: 37%;
 }
 
-
+/* ----------- NAVBAR --------------- */
+.twitter {
+	width: 4.5%;
+}
+.pinterest {
+	width: 4.5%;
+}
 /* -------------- CONTENT ------------- */
 body {
 	background-image: url(/static/img/paper.png);
