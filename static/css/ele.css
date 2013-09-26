@@ -24,12 +24,17 @@
 /* --------- COMPASS AND LINKS --------- */
 .pages_links {
 	padding: 1%;
-	margin-top: 6%;
+	margin-top: 5%;
+	margin-left: 30%;
 	background-color: #3F527C;
-	opacity: 0.9;
+	border-radius: 300px;
+	height: 500px;
+	width: 500px;
+	opacity: 0.7;
 }
 .pages_links a {
-	margin-left: 48%;
+	margin-left: 40%;
+	margin-top: 3%;
 	box-shadow: 2px 2px 5px 5px;
 	-webkit-box-shadow: 2px 2px 5px 5px;
 	-moz-box-shadow: 2px 2px 5px 5px;
@@ -43,8 +48,9 @@
 }
 .pages_links img {
 	/*border: 1px solid grey;*/
-	width: 30%;
-	margin-left: 37%;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 6%;
 }
 
 /* ----------- NAVBAR --------------- */
@@ -54,12 +60,19 @@
 .pinterest {
 	width: 4.5%;
 }
+/*.navbar .nav {
+	float none;
+	display: inline-block;
+}
+.navbar .navbar-inner .container {
+	text-align: center;
+}*/
 /* -------------- CONTENT ------------- */
 body {
 	background-image: url(/static/img/paper.png);
 }
 .follow_me {
-	margin-top: 4%;
+	margin-top: 10%;
 	margin-left: 12%;
 }
 .about_content {
@@ -91,7 +104,7 @@ body {
 	margin-left: 40%;
 	float: left;
 }
-.btn_to_homepage {
+/*.btn_to_homepage {
 	margin-top: 1%;
 	margin-left: 5%;
 	float: left;
@@ -107,7 +120,7 @@ body {
 	-webkit-box-shadow: 2px 2px 10px 5px #8CCEBC;
 	-moz-box-shadow: 2px 2px 10px 5px #8CCEBC;
 	-o-box-shadow: 2px 2px 10px 5px #8CCEBC;
-}
+}*/
 .link_about {
 	padding: 1%;
 }
@@ -118,7 +131,7 @@ body {
 /* ----------- FOOTER ------------ */
 .footer {
 	padding: 5px;
-	margin-top: 25%;
+	margin-top: 30%;
 	margin-left: 45%;
 	clear: both;
 }
