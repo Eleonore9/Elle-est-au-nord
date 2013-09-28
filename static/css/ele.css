@@ -22,17 +22,45 @@
 
 
 /* --------- COMPASS AND LINKS --------- */
+.link_about {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.link_about h4 {
+	text-align: center;
+}
+.link_projects {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.link_projects h4 {
+	text-align: center;
+}
 .pages_links {
 	padding: 1%;
+	background-color: #3F527C;
+	border-radius: 400px;
+	max-width:50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	/* previous settings
 	margin-top: 5%;
 	margin-left: 30%;
-	background-color: #3F527C;
-	border-radius: 300px;
 	height: 500px;
-	width: 500px;
+	width: 500px;*/
 	opacity: 0.7;
 }
 .pages_links a {
+	color: #352C2C;
+}
+.pages_links a:hover {
+	color: #2B8C7D;
+}
+/*.pages_links a {
 	margin-left: 40%;
 	margin-top: 3%;
 	box-shadow: 2px 2px 5px 5px;
@@ -45,12 +73,18 @@
 	-webkit-box-shadow: 2px 2px 10px 5px #8CCEBC;
 	-moz-box-shadow: 2px 2px 10px 5px #8CCEBC;
 	-o-box-shadow: 2px 2px 10px 5px #8CCEBC;
-}
+}*/
 .pages_links img {
 	/*border: 1px solid grey;*/
+	display: block;
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:4%;
+	/*previous settings
 	width: 70%;
 	margin-left: 15%;
-	margin-top: 6%;
+	margin-top: 6%;*/
 }
 
 /* ----------- NAVBAR --------------- */
@@ -130,8 +164,15 @@ body {
 
 /* ----------- FOOTER ------------ */
 .footer {
+
 	padding: 5px;
 	margin-top: 30%;
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 	clear: both;
 }
+.footer p {
+	text-align: center;	
+	margin-left: auto;
+	margin-right: auto;
+}
+	
