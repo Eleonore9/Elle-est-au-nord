@@ -97,6 +97,9 @@
 	color: #3F527C;
 	width: 60%;
 }
+.nav_social {
+	/*float: right;*/
+}
 .twitter {
 	width: 4.5%;
 }
@@ -115,17 +118,41 @@ body {
 	background-image: url(/static/img/paper.png);
 }
 .follow_me {
-	margin-top: 10%;
+	margin-top: 8%;
 	margin-left: 12%;
+	border-top: 1px solid grey;
+	padding-top: 3%;
+}
+.name_intro h3{
+	/*text-align: center;*/
 }
 .about_content {
 	margin-top: 2%;
 	margin-left: 40%;
+	/*text-align:center;*/
 }
-.container {
-	/*border: 1px solid blue;*/
+/*-----------Portfolio--------------*/
+.portfolio {
+	border-top: 1px solid grey;
 }
-
+.right {
+	margin-top: 3%;
+	float: right;
+	width: 50%;
+	/* I can't change the height
+	height: 50%;*/
+	border-radius: 10px;
+}
+.portfolio iframe {
+	border: 1px solid #CDCCCE;
+	width: 100%;
+	/*height: 100%;*/
+}
+.left {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	float: left;
+}	
 
 /* ------------- WIDGETS ------------ */
 .widget_twitter {
@@ -173,9 +200,8 @@ body {
 
 /* ----------- FOOTER ------------ */
 .footer {
-
 	padding: 5px;
-	margin-top: 30%;
+	margin-top: 40%;
 	/*margin-left: 45%;*/
 	clear: both;
 }
