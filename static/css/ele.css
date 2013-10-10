@@ -191,8 +191,6 @@ body {
 	float: left;
 	width: 40%;
 }
-
-
 /* ------------ BUTTONS ------------ */
 .linkedin_button {
 	margin-top: 1%;
@@ -226,7 +224,7 @@ body {
 /* ----------- FOOTER ------------ */
 .footer {
 	padding: 5px;
-	margin-top: 40%;
+	margin-top: 15%;
 	/*margin-left: 45%;*/
 	clear: both;
 }
