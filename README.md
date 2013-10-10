@@ -1,5 +1,5 @@
-Eléonore
-========
+Eléonore ~ Elle est au nord.
+============================
 
 Find my website at <http://Elle-est-au-nord.com> or <http://Elle-est-au-nord.herokuapp.com>.
 
