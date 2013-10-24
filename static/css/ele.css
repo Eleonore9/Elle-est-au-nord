@@ -222,13 +222,13 @@ body {
 }
 
 /* ----------- FOOTER ------------ */
-.footer {
+footer {
 	padding: 5px;
 	margin-top: 15%;
 	/*margin-left: 45%;*/
 	clear: both;
 }
-.footer p {
+footer p {
 	text-align: center;	
 	margin-left: auto;
 	margin-right: auto;
