@@ -4,4 +4,4 @@ $(document).ready(function(){
 	});
 });
 
-var message = "Hi! I have skills in Python, Ruby, JS, jQuery, HTML & CSS and I'm looking for new professional challenges!"
+var message = "Hi! I have skills in Python, Ruby, JS, HTML/CSS. I build websites/apps and am interested in Data Science!"
