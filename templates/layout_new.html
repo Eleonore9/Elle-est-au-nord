@@ -1,12 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="I am a programmer and data scientist.">
+    <meta name="author" content="Eléonore Mayola">
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+ 
+
     <link rel="shortcut icon" href="/static/img/favicon.png">
 
     <title>Elle est au nord.</title>
@@ -40,16 +44,17 @@
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+
   </head>
 
-  <body>
+  <body onload="initmap();">
 
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
+	  
           <div class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">Eléonore</h3>
@@ -63,15 +68,16 @@
 	  <div class="title">
 	    <img src="/static/img/banner2.gif"  alt="banner title">
           </div>
-
+	  
           <div class="inner cover">
+	    <div id="map"></map>
 		{% block body %}{% endblock %}
           </div>
 
           <div class="mastfoot">
             <div class="inner">
             	<p>
-		Copyright 2014 - <a href="https://twitter.com/eleonoremayola/" target="_blank">Eleonore</a>
+		Copyright 2015 - <a href="https://twitter.com/eleonoremayola/" target="_blank">Eleonore</a>
 		</p>
             </div>
           </div>

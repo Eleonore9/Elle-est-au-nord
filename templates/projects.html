@@ -1,59 +1,19 @@
-{% extends "layout.html" %}
+{% extends "layout_new.html" %}
 {% block body %}
-
-<div class="title">
-	<img src="/static/img/banner2.gif" alt="banner title">
-</div>
 
 <div class="name_intro">
 	<h3>Portfolio</h3>
 </div>
 
-<!-- Links to my Github and Bitbucket repositories -->
-<!--<div class="about_content">
-		<h5>
-			My code repos are on <a href="https://github.com/Eleonore9" class="btn">Github</a> 
-			and <a href="https://bitbucket.org/eleonore9" class="btn">Bitbucket</a>.
-		</h5><br>
-</div>-->
-
-<!--<div class="portfolio">
-	<div class="elleestaunord">
-		<div class="left">
-			<h4>Elle-est-au-nord.</h4>
-			<p> This website is made with Python/Flask, HTML, CSS and JS</p>
-			<p>Github repo :<a href="https://github.com/Eleonore9/Elle-est-au-nord">
-				github.com/Eleonore9/Elle-est-au-nord</a>.
-			</p>
-		</div>
-		<div class="right">
-			<iframe src="{{url_for('index')}}"></iframe>
-		</div>
-	</div>
-	<div class="medium">
-		<div class="left">
-			<h4>Medium</h4>
-			<p> It is a one page app that gives predictions! </p>
-			<p> It is full of jQuery and CSS. Its backend is Python/Flask.</p>
-			<p>Github repo :<a href="https://github.com/Eleonore9/Medium/">
-				github.com/Eleonore9/Medium</a>.
-			</p>
-		</div>
-		<div class= "right">
-			<iframe src="http://mediumapp.herokuapp.com/"></iframe>
-		</div>
-	</div>
-</div>-->
-
-<!-- For now I use a caroussel for the portfolio -->
-<div id="myCarousel" class="carousel slide">
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
 	</ol>
 	<!-- Carousel items -->
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="active item"><img alt="Eleonore screenshot" src="static/img/elleestaunord_.jpg">
 			<div class="carousel-caption">
 				<h4>Elle est au nord.</h4>
@@ -110,8 +70,15 @@
 
 	</div>
 	<!-- Carousel nav -->
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+	</a>
+	
 </div>
 
 {% endblock %}

@@ -1,11 +1,11 @@
 /* Background */
 
 body {
-	background: url(/static/img/paper.png);
+	/*background: url(/static/img/paper.png);*/
 }
 .site-wrapper {
 	background-color: #3F527C;
-	opacity: 0.75;
+	opacity: 0.85;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -13,11 +13,11 @@ body {
 	height: 100%;
 }
 .title {
-	/*border: 1px solid green;*/
-	margin-top: 20%;
+    margin-top: 8%;
+    margin-bottom: 5%;
 }
 .title img {
-	width: 40%;
+    width: 40%;
 }
 
 /* Changes to the bootstrap cover style */
@@ -30,10 +30,24 @@ body {
 
 /* INDEX page */
 .compass {
-	/*border: 1px solid red;*/
 	padding-top: 20%;
 	background: url(/static/img/compass2.gif) no-repeat 50% center;
 	background-size: 60%;
 	width: 100%;
 	height: 400px;
+}
+
+.lead.main {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#map {
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    opacity: 0.2;
+    z-index: -100;
 }
