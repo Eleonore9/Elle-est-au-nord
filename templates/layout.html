@@ -47,7 +47,7 @@
 
   </head>
 
-  <body onload="initmap();">
+  <!--<body onload="initmap();">-->
 
     <div class="site-wrapper">
 
@@ -59,9 +59,9 @@
             <div class="inner">
               <h3 class="masthead-brand">Eléonore</h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="{{url_for("projects")}}">Portfolio</a></li>
-                <li><a href="{{url_for("aboutme")}}">About me</a></li>
+                <li class="home"><a href="/">Home</a></li>
+                <li class="portfolio"><a href="{{url_for("projects")}}">Portfolio</a></li>
+                <li class="aboutme"><a href="{{url_for("aboutme")}}">About me</a></li>
               </ul>
             </div>
           </div>
@@ -70,7 +70,7 @@
           </div>
 	  
           <div class="inner cover">
-	    <div id="map"></map>
+	    
 		{% block body %}{% endblock %}
           </div>
 
@@ -93,7 +93,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/docs.min.js"></script>
   </body>
 </html>
 

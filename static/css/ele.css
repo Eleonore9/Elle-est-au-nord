@@ -5,7 +5,7 @@ body {
 }
 .site-wrapper {
 	background-color: #3F527C;
-	opacity: 0.85;
+	opacity: 0.7;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -13,7 +13,7 @@ body {
 	height: 100%;
 }
 .title {
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 .title img {
@@ -29,7 +29,8 @@ body {
 }
 
 /* INDEX page */
-.compass {
+#compass {
+        top: 20%;
 	padding-top: 20%;
 	background: url(/static/img/compass2.gif) no-repeat 50% center;
 	background-size: 60%;
