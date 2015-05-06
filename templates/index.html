@@ -1,27 +1,19 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<div class="title">
-	<img src="/static/img/banner2.gif"  alt="banner title">
-</div>
+<!--<div id="map"></map>-->
 
-<!-- Short personal introduction -->
-<div class="short_intro">
-	<h3>Learner. Dreamer. (Dark) chocolate addict!</h3>
-    <h3>Developer.</h3>
+<div id="compass">
+  
+  <h1 class="cover-heading"></h1>
+  
+  <p class="lead">Learner. Dreamer. (Dark) chocolate addict!</p>
+  <p class="lead main">Python & Clojure developer. Data wrangler.</p>
+  <p class="lead"></p>
+  <p class="lead">
+    <a href="{{url_for("aboutme")}}" class="btn btn-lg btn-default">About me</a>  
+    <a href="{{url_for("projects")}}" class="btn btn-lg btn-default">Portfolio</a>  
+  </p>
+  
 </div>
-
-<!-- Links to other pages -->
-<div class="pages_links">
-	<div class="link_about">
-		<!--<a href="{{url_for("aboutme")}}" class="btn">About me</a>-->
-		<a href="{{url_for("aboutme")}}" class="north_link"><h4>About me</h4></a>
-	</div>
-		<img src="/static/img/compass2.gif" alt="compass logo">	
-	<div class="link_projects">
-		<!--<a href="{{url_for("projects")}}" class="btn">Portfolio</a>-->
-		<a href="{{url_for("projects")}}" class="south_link"><h4>Portfolio</h4></a>
-	</div>
-</div>
-
 {% endblock %}

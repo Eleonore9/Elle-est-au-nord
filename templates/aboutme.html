@@ -1,30 +1,22 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<div class="title">
-	<img src="/static/img/banner2.gif" alt="banner title">
-</div>
-
 <div class="name_intro">
 	<h3>About me</h3>
 </div>
 
 <!-- blabla about me -->
 <div class="about_content">
-		<h5>
+		<p>
 			I'm a Biologist turned Developer! <br>
             <a href="http://www.hackbrightacademy.com/" target="_blank">
                 Hackbright Academy</a> Alumni.<br>
 			Not a ninja or a rockstar.<br>
 			I think and make things.<br> 
 			I love solving problems and learning new technologies.<br><br>
-			I speak French, English, Python, SQL, HTML and CSS.<br>
-			Knowledge of Javascript, jQuery and German.<br>
-            Learning D3.js, Java and Clojure.<br>
-            Also co-organiser at 
-            <a href="http://www.meetup.com/pyladieslondon/" target="_blank">
-                PyLadies London</a> Meetup group.
-		</h5><br>
+			I speak French, English, Python, Clojure and SQL.<br>
+			Knowledge of Javascript, jQuery, CQL.<br>
+		</p><br>
 </div>
 
 <!-- Link to my LinkedIn profile with LinkedIn button -->
@@ -35,18 +27,5 @@
 		</a>
 </div>
 
-<!-- My recent tweets and pins by embeding Twitter and Pinterest code -->
-<div class="follow_me">
-		<div class="widget_twitter">
-			<h4>I share my thoughts on Twitter...</h4><br>
-			<a class="twitter-timeline"  href="https://twitter.com/EleonoreMayola/"  data-widget-id="318815938969477120">Tweets by @EleonoreMayola</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div>
-		<div class="widget_pinterest">
-			<h4>... and my taste on Pinterest.</h4><br>
-			<a data-pin-do="embedUser" href="http://pinterest.com/eleonore9/"></a>
-			<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-		</div>	
-</div>
 
 {% endblock %}

@@ -1,92 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="I am a programmer and data scientist.">
+    <meta name="author" content="Eléonore Mayola">
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+ 
 
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png">
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Elle est au nord.</title>
+    <title>Elle est au nord.</title>
 
-		<!-- links for Bootstrap CSS/JS, my CSS file and my favicon -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="static/css/bootstrap.min.css"
-		type="text/css">
-		<link rel="stylesheet" href="static/css/bootstrap-responsive.min.css"
-		type="text/css">
-		<link rel="stylesheet" href="static/css/ele.css"
-		type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
-		<link rel="icon" type="image/png" href="/static/img/favicon.png" />
-		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="static/js/bootstrap.min.js"></script>
-		<script src="static/js/ele.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/ele.css" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/ele.js"></script>
 	
-	        <!-- code for Google Analytics -->
-		<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-43879759-1']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-		</script>
-	</head>
+    <!-- code for Google Analytics -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43879759-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 
-	<body>
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<!--<a class="brand" href="{{url_for("index")}}">Eléonore</a>-->
-					<div class="nav-collapse">
-						<ul class="nav">
-							<li><a href="{{url_for("index")}}">Home</a></li>
-							<li><a href="{{url_for("aboutme")}}">About</a></li>
-							<li><a href="{{url_for("projects")}}">Portfolio</a></li>
-							<!--<li class="twitter"><a href="https://twitter.com/eleonoremayola">
-								<img alt="Twitter logo" src="static/img/twitter-bird-light-bgs.png"></img>							
-							</a></li>-->
-							<!--<li class="pinterest"><a href="http://www.pinterest.com/eleonore9/">
-								<img alt="Pinterest logo" src="static/img/pinterest_badge_red.png"></img>
-							</a></li>-->
-						</ul>
-					</div>
-					<a class="brand" href="{{url_for("index")}}">Eléonore</a>
-					<!--<ul class="nav" class="nav_social">
-						<li class="twitter"><a href="https://twitter.com/eleonoremayola">
-								<img alt="Twitter logo" src="static/img/twitter-bird-light-bgs.png"></img>							
-							</a></li>
-						<li class="pinterest"><a href="http://www.pinterest.com/eleonore9/">
-								<img alt="Pinterest logo" src="static/img/pinterest_badge_red.png"></img>
-							</a></li>
+  </head>
 
-						</ul>-->
+  <!--<body onload="initmap();">-->
 
-					<iframe src="http://ghbtns.com/github-btn.html?user=Eleonore9&type=follow"
-						allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20">
-					</iframe>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-					{% block body %}{% endblock %}
-				</div>
-			</div>
-		</div>
-		<footer>
-			<p>
-			Copyright 2013 - <a href="https://twitter.com/eleonoremayola/" target="_blank">Eleonore</a>
-			</p>
-	
-		</footer>
-			
-	</body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+	  
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Eléonore</h3>
+              <ul class="nav masthead-nav">
+                <li class="home"><a href="/">Home</a></li>
+                <li class="portfolio"><a href="{{url_for("projects")}}">Portfolio</a></li>
+                <li class="aboutme"><a href="{{url_for("aboutme")}}">About me</a></li>
+              </ul>
+            </div>
+          </div>
+	  <div class="title">
+	    <img src="/static/img/banner2.gif"  alt="banner title">
+          </div>
+	  
+          <div class="inner cover">
+	    
+		{% block body %}{% endblock %}
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+            	<p>
+		Copyright 2015 - <a href="https://twitter.com/eleonoremayola/" target="_blank">Eleonore</a>
+		</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
 </html>
+
+
