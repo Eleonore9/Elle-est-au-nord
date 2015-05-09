@@ -1,8 +1,8 @@
 CACHE MANIFEST
 
-# Version 1
+/static/js/ele.js
+/static/css/cover.css
+/static/css/ele.css
+/static/img/favicon_r
+/static/img/banner2.gif
 
-CACHE
-http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js
-http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css
-https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
