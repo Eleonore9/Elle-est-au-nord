@@ -56,3 +56,11 @@
 #myCarousel .carousel-inner .carousel-caption a {
     color: black;
 }
+
+/* ABOUT ME page */
+social_buttons img {
+    z-index: 1;
+}
+.social_buttons a:hover {
+    text-decoration: none;
+}

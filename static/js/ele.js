@@ -1,3 +1,4 @@
+// Add a map centered on London
 var map;
 
 function initmap() {
@@ -10,7 +11,7 @@ function initmap() {
   map.setView([51.5020, -0.1239], 11);
 }
 
-
+// Decoration for active tab name
 $( document ).ready(function() {
 
   var path = window.location.pathname;
@@ -28,6 +29,5 @@ $( document ).ready(function() {
     $('.nav li.home').removeClass('active')
     $('.nav li.aboutme').addClass('active');
   }
-
 
 });
