@@ -47,3 +47,12 @@
     font-size: 26px;
     font-weight: bold;
 }
+
+/* PROJECTS page */
+#myCarousel .carousel-inner .carousel-caption {
+    background-color: #525D72;
+    opacity: 0.7;
+}
+#myCarousel .carousel-inner .carousel-caption a {
+    color: black;
+}
