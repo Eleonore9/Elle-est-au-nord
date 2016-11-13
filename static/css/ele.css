@@ -50,15 +50,22 @@
 
 /* PROJECTS page */
 #myCarousel .carousel-inner .carousel-caption {
-    background-color: #525D72;
+    background-color: #3F527C;
     opacity: 0.85;
+    border-radius: 3.5px;
 }
 #myCarousel .carousel-inner .carousel-caption a {
     color: #269B84;
 }
 
 /* ABOUT ME page */
-social_buttons img {
+.about_me {
+    background-color: #3F527C;
+    opacity: 0.55;
+    padding: 0.2% 0 3% 0;
+    border-radius: 3.5px;
+}
+.social_buttons img {
     z-index: 1;
 }
 .social_buttons a:hover {
