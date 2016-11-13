@@ -4,10 +4,7 @@ python:
 sudo: required
 install:
   - pip install --upgrade pip
-  - wget https://bootstrap.pypa.io/ez_setup.py -O - | python
-  - unzip setuptools-*.zip
-  - python setuptools-*/setup.py install
-  - pip install itsdangerous
+  - wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python
   - pip install -r requirements.txt
 script: py.test
 deploy:
