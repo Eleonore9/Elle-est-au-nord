@@ -3,7 +3,7 @@
 import pytest_flask
 import pytest
 from flask import url_for
-from elleestaunord import app as my_app
+from elleestaunord.site import app as my_app
 
 
 @pytest.fixture
