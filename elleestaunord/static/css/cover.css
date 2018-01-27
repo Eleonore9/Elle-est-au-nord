@@ -76,6 +76,9 @@ body {
 .blog a {
     color: #15965A !important;
 }
+.biz a {
+    color: #FFFF99 !important;
+}
 
 .masthead-nav > li > a {
   padding-right: 0;
