@@ -72,6 +72,11 @@ body {
 .masthead-nav > li + li {
   margin-left: 20px;
 }
+
+.blog a {
+    color: #15965A !important;
+}
+
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
