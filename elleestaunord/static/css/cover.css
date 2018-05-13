@@ -14,7 +14,6 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -32,8 +31,6 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -61,38 +58,40 @@ body {
 /*
  * Header
  */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.masthead {
+    margin-top: 12%;
+    font-family: monospace;
 }
 
 .masthead-nav > li {
-  display: inline-block;
+    display: inline;
 }
-.masthead-nav > li + li {
-  margin-left: 20px;
+
+.masthead ul {
+    margin-left: 2%;
 }
 
 .blog a {
-    color: #15965A !important;
+    color: #16a085 !important;
 }
 .biz a {
-    color: #FFFF99 !important;
+    color: #3366cc !important;
 }
 
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: rgba(255, 255, 255, 0.75);
   border-bottom: 2px solid transparent;
+  margin-bottom: 25%;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: rgba(255, 255, 255, 0.35);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -106,7 +105,7 @@ body {
     float: left;
   }
   .masthead-nav {
-    float: right;
+    float: left;
   }
 }
 
@@ -129,8 +128,7 @@ body {
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: #fff;
 }
 
 
@@ -139,31 +137,45 @@ body {
  */
 
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
   }
+
   .mastfoot {
     position: fixed;
     bottom: 0;
   }
-  /* Start the vertical centering */
+
   .site-wrapper-inner {
     vertical-align: middle;
   }
-  /* Handle the widths */
+
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
+    .masthead {
+    position: fixed;
+    top: 0;
+  }
+
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 100%;
   }
 }
