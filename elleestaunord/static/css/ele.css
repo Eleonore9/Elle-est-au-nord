@@ -48,18 +48,27 @@
 }
 
 /* PROJECTS page */
-#myCarousel .carousel-inner .carousel-caption {
-    background-color: #3F527C;
-    opacity: 0.85;
-    border-radius: 3.5px;
+.portfolio{
+    margin-left: 25%;
+    width: 60%;
 }
-#myCarousel .carousel-inner .carousel-caption a {
-    color: #269B84;
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects img {
+    width: 30%;
+}
+
+.projects span {
+    position: absolute;
 }
 
 /* ABOUT ME page */
 .about_me {
-    margin-top: -4%;
+    margin-top: -5%;
     margin-left: 30%;
     width: 40%;
     height: 380px;
