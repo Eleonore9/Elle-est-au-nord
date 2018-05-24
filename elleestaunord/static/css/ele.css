@@ -49,21 +49,31 @@
 
 /* PROJECTS page */
 .portfolio{
-    margin-left: 25%;
-    width: 60%;
+    margin-left: 15%;
+    width: 80%;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.project_wrapper {
+    position: relative;
+    width: 40%;
+    border: 1 px solid grey;
 }
 
 .projects img {
-    width: 30%;
+    width: 60%;
+    position: relative;
 }
 
-.projects span {
+.project_info {
     position: absolute;
+    /*width: 60%;*/
+    z-index: 10;
 }
 
 /* ABOUT ME page */
