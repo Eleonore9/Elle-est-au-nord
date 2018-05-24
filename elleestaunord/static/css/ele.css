@@ -49,31 +49,38 @@
 
 /* PROJECTS page */
 .portfolio{
-    margin-left: 15%;
+    margin: 0 0 5% 15%;
     width: 80%;
 }
 
 .projects {
+    padding-top: 2%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    background-color: rgba(114, 159, 207, 0.6);
+    border-radius: 4px;
 }
 
 .project_wrapper {
     position: relative;
-    width: 40%;
-    border: 1 px solid grey;
+    width: 30%;
+    margin-bottom: 2%;
 }
 
 .projects img {
-    width: 60%;
+    width: 85%;
     position: relative;
 }
 
 .project_info {
     position: absolute;
-    /*width: 60%;*/
+    margin: 5% 0 0 7%;
+    width: 80%;
     z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* ABOUT ME page */
