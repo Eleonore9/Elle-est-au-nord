@@ -17,6 +17,10 @@ app.config.update(
 def index():
 	return render_template("index.html")
 
+@app.route("/hireme", methods=["GET"])
+def hireme():
+        return render_template("hireme.html")
+
 @app.route("/aboutme", methods=["GET"])
 def aboutme():
 	return render_template("aboutme.html")

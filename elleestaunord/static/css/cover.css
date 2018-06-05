@@ -6,7 +6,8 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Custom default button */
@@ -49,37 +50,41 @@ body {
   margin-left: auto;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-
 
 /*
  * Header
  */
 .masthead {
     margin-top: 12%;
-    font-family: monospace;
 }
 
-.masthead-nav > li {
-    display: inline;
+nav {
+    font-family: monospace; !important
 }
 
-.blog a {
+.nav {
+    margin-top: 22%;
+    width: 70%;
+}
+
+.nav > li {
+    height: 33px;
+    margin-bottom: 20%;
+    text-align: left;
+}
+
+.link-blog a {
     color: #16a085 !important;
 }
 
-.biz a {
+.link-biz a {
     color: #3366cc !important;
 }
 
-.masthead-nav > li > a {
+.nav > li > a {
   padding-right: 0;
   padding-left: 4%;
   margin-top: 5%;
-  text-align: left;
   font-size: 22px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
@@ -87,23 +92,20 @@ body {
   border-left: 2px solid transparent;
   margin-left: 25%;
 }
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
   background-color: transparent;
   border-left-color: rgba(255, 255, 255, 0.35);
 }
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
+.nav > .active > a,
+.nav > .active > a:hover,
+.nav > .active > a:focus {
   color: #fff;
   border-left-color: #fff;
 }
 
 @media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
+  .nav {
     float: left;
   }
 }
