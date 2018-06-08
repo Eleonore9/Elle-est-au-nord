@@ -1,4 +1,4 @@
-// Add a map centered on London
+// Add a map centered on Stockholm
 var map;
 
 function initmap() {
