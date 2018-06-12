@@ -2,18 +2,21 @@
 {% block body %}
 
 
-<div class="about_me">
-  <div class="intro_photo">
-    <img alt="photo portrait by Mariana Bocoi" src="/static/img/portrait.jpg"/>
-    <span>Photo credit: Mariana Bocoi</span>
-  </div>
+<div id="about_me">
+  <div class="introduction col-md-8 offset-md-2">
 
-  <div class="about_content">
+    <div class="intro_photo col-md-3">
+      <img alt="photo portrait by Mariana Bocoi"
+	   src="/static/img/portrait.jpg"/>
+      <span>Photo credit: Mariana Bocoi</span>
+    </div>
+
+    <div class="about_content col-md-9 offset-md-3">
+      <h3>Hej! My name is <span>Éléonore Mayola</span>.</h3>
 	<div class="text-content">
-	  Hej! My name is <b>Éléonore Mayola</b>.<br>
-          I am a freelance developer who loves data visualisation and maps!<br><br>
+          I am a Stockholm-based freelance developer who loves <b>data visualisation</b> and <b>maps</b>!<br><br>
           I'm a Biologist turned Developer.<br>
-	  My experience spans full-stack web development and data science/engineering.<br>
+	  My experience spans full-stack <b>web development</b> and <b>data science/engineering</b>.<br>
 	  I have worked with Python, Clojure/Cljs, Javascript, HTML, CSS, APIs, AWS (EC2, S3, Redshift, Lambda), SQL, no SQL, git, Github.
 	</div>
 	<div class="social_buttons">
@@ -27,6 +30,7 @@
 	  <img src="/static/img/twitter.png" border="0" alt="Twitter logo">
 	</a>
 	</div>
+    </div>
   </div>
 </div>
 

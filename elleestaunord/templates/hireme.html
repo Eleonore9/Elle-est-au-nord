@@ -4,47 +4,58 @@
 
 <div id="hireme">
   <div class="biz-intro col-md-6 offset-md-3">
-    <h3>I'll eagerly help your team data or web projects!</h3>
-    <h5>I'm happy to research, experiment and/or prototype</h5>
-    <h5>Plus I know academic (biomedical) research and have GIS skills</h5>
+    <h3>I'll happily help your team with data or web projects!</h3>
+    <h5>I research, prototype and deliver projects using opensource tools.</h5>
   </div>
 
-  <div class="services">
-    <h3>Below are projects I've work on</h3>
+  <div class="services col-md-8 offset-md-2">
+     <div id="accordion">
+  <div class="card">
+    <div class="card-header web" id="headingOne">
+      <h4 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Web Development
+        </button>
+      </h4>
+    </div>
 
-  <p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseWeb" role="button" aria-expanded="false" aria-controls="collapseWeb">
-    Web development
-    </a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseData" aria-expanded="false" aria-controls="collapseData">
-    Data Sc./Eng.
-    </button>
-  </p>
-  <div class="collapse" id="collapseWeb">
-    <div class="card card-body">
-      <h5>Front-end</h5>
-	  <em><strong>Javascript/jQuery, HTML/CSS</strong></em> - <a href="https://github.com/Eleonore9/potion-frontend" target="_blank">Link</a> -  App that parses JSON data and presents it on a user interface (re-write with Angular.js in progress)
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+	<h5>Front-end</h5>
+	  <p><a href="https://github.com/Eleonore9/potion-frontend" target="_blank">App</a> that parses JSON data and presents it on a user interface (re-write with Angular.js in progress) [<em>Javascript/jQuery, HTML/CSS</em>]</p>
 	  <h5>Back-end</h5>
-	  <em><strong>Clojure, Cassandra</strong></em> - <a href="https://github.com/MastodonC/kixi.himinbjorg" target="_blank">Link</a> - Template web application to be used with Mastodon C Ltd’s authentication/authorisation microservice <br>
-	  <em><strong>Clojure</strong></em> - <a href="https://github.com/Eleonore9/potion-making" target="_blank">Link</a> - App that parses data from a CSV and serves it as JSON through an API endpoints <br>
-	  <em><strong>Python/Flask, Postgres and SQLAlchemy</strong></em> - <a href="https://github.com/Eleonore9/backend-ttt" target="_blank">Link</a> - Project for the backend of a game of tic tac toe
+      <p><a href="https://github.com/MastodonC/kixi.himinbjorg" target="_blank">Template</a> web application to be used with Mastodon C Ltd’s authentication/authorisation microservice [<em>Clojure, Cassandra</em>]</p>
+      <p><a href="https://github.com/Eleonore9/potion-making" target="_blank">App</a> that parses data from a CSV and serves it as JSON through an API endpoints [<em>Clojure</em>]</p>
+      <p><a href="https://github.com/Eleonore9/backend-ttt" target="_blank">Project</a> for the backend of a game of tic tac toe [<em>Python/Flask, Postgres and SQLAlchemy</em>]</p>
+      </div>
     </div>
   </div>
-  <div class="collapse" id="collapseData">
-    <div class="card card-body">
-      <h5>Data engineering</h5>
-	<em><strong>Clojure/Amazonica, AWS S3 </strong></em> - <a href="https://github.com/MastodonC/kixi.hecuba.minorca" target="_blank">Link</a> - Programme run as a cron job by a client of Mastodon C Ltd to load sensor measurements from files on AWS S3 onto a web platform via an API <br>
-	<em><strong>Python, JSON</strong></em> - <a href="https://github.com/MastodonC/scripts-embed-api" target="_blank">Link</a> - Scripts for Mastodon C Ltd's data engineers to handle JSON data from/to an API and write CSV reports <br>
-	<em><strong>Clojure, XML</strong></em> - <a href="https://github.com/Eleonore9/xml-to-model-structure" target="_blank">Link</a> - Programme for Mastodon C Ltd's data scientists to create a Clojure project structured to write predictive models from an XML diagram <br>
-	<em><strong>Clojure, Leiningen</strong></em> - <a href="https://github.com/MastodonC/witan-model-template" target="_blank">Link</a> - Leiningen template to help create predictive models (used in the programme described above)<br>
+  <div class="card">
+    <div class="card-header data" id="headingTwo">
+      <h4 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Data Science/Engineering
+        </button>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+	<h5>Data engineering</h5>
+        <p><a href="https://github.com/MastodonC/kixi.hecuba.minorca" target="_blank">Programme</a> for a client of Mastodon C Ltd to load sensor measurements from files on AWS S3 onto a web platform via an API [<em>Clojure/Amazonica, AWS S3</em>]</p>
+	<p><a href="https://github.com/MastodonC/scripts-embed-api" target="_blank">Scripts</a> for Mastodon C Ltd's data engineers to handle JSON data from/to an API and write CSV reports [<em>Python, JSON</em>]</p>
+	<p><a href="https://github.com/Eleonore9/xml-to-model-structure" target="_blank">Programme</a> for Mastodon C Ltd's data scientists to create a Clojure project structured to write predictive models from an XML diagram [<em>Clojure, XML</em>]</p>
+	<p><a href="https://github.com/MastodonC/witan-model-template" target="_blank">Leiningen template</a> to help create predictive models (used in the programme described above) [<em>Clojure, Leiningen</em>]</p>
 	<h5>Data science</h5>
-	<em><strong>Python, Gensim, Nltk</strong></em> - <a href="https://github.com/Eleonore9/get-articles-meaning" target="_blank">Link</a> - Classifier for scientific articles using topic modelling <br>
-	<em><strong>Clojure, core.matrix </strong></em> - <a href="https://github.com/MastodonC/witan.models.demography" target="_blank">Link</a> - Population projections model using a Cohort Component method for Mastodon C’s city planning platform: <br>
-	<em><strong>Clojure, core.matrix </strong></em> - <a href="https://github.com/MastodonC/witan.models.household" target="_blank">Link</a> - Dwellings projections model for MastodonC Ltd’s city planning platform <br>
-	<em><strong>Clojure, core.matrix </strong></em> - <a href="https://github.com/MastodonC/witan.gwyn" target="_blank">Link</a> - Fire risks projections for commercial buildings delivered to a client of Mastodon C Ltd <br>
-	<em><strong>Clojure, core.matrix </strong></em> - <a href="https://github.com/MastodonC/witan.send" target="_blank">Link</a> - Special Educational Needs and Disability demand and cost projections model delivered to a client of Mastodon C Ltd <br>
+	<p><a href="https://github.com/Eleonore9/get-articles-meaning" target="_blank">Classifier</a> for scientific articles using topic modelling [<em>Python, Gensim, Nltk</em>]</p>
+	<p>Population projections <a href="https://github.com/MastodonC/witan.models.demography" target="_blank">model</a> using a Cohort Component method for Mastodon C’s city planning platform [<em>Clojure, core.matrix</em>]</p>
+	<p>Dwellings projections <a href="https://github.com/MastodonC/witan.models.household" target="_blank">model</a> for MastodonC Ltd’s city planning platform [<em>Clojure, core.matrix</em>]</p>
+	<p>Fire risks projections <a href="https://github.com/MastodonC/witan.gwyn" target="_blank">model</a> for commercial buildings delivered to a client of Mastodon C Ltd [<em>Clojure, core.matrix</em>]</p>
+	<p>Special Educational Needs and Disability demand and cost projections <a href="https://github.com/MastodonC/witan.send" target="_blank">model</a> delivered to a client of Mastodon C Ltd [<em>Clojure, core.matrix</em>]</p>
+      </div>
     </div>
   </div>
+ </div>
+
  </div>
 </div>
 

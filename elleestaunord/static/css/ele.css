@@ -1,7 +1,9 @@
 /* Background */
 .site-wrapper {
-	background-color: rgba(114, 159, 207, 0.55);
-	position: absolute;
+    /*position: absolute;*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -9,6 +11,7 @@
 }
 
 .site-body {
+    flex: 1;
     margin-top: 10%;
 }
 
@@ -19,7 +22,7 @@
     bottom:0;
     width:100%;
     opacity: 0.4;
-    z-index: -1;
+    z-index: -10;
 }
 
 
@@ -58,20 +61,54 @@
     font-weight: bold;
 }
 
-#hireme .btn {
+#hireme .card-header h4 button {
+    color: white;
+    text-decoration: none;
     font-family: monospace;
+    font-weight: bold;
+}
+
+#hireme .card-header.web {
+    background-color: rgb(41, 128, 185, 0.5);
+}
+
+#hireme .card-header.data {
+    background-color: rgb(51, 102, 204, 0.5);
 }
 
 #hireme .card-body {
+    background-color: rgba(114, 159, 207, 0.4);
     color: black;
+    text-align: left;
+}
+
+#hireme .card-body h5 {
+    font-family: monospace;
+}
+
+#hireme .card-body a {
+    color: #16a085;
+    font-weight: bold;
+}
+#hireme .card-body a:hover {
+    color: white;
 }
 
 #hireme .biz-intro {
     background-color: rgba(114, 159, 207, 0.7);
     padding: 1%;
+    border-radius: 4px;
+}
+
+#hireme .services {
+    padding: 1%;
 }
 
 /* PROJECTS page */
+#portfolio {
+    margin-top: -7%;
+}
+
 #portfolio h3 {
     font-weight: bold;
 }
@@ -119,48 +156,46 @@
 }
 
 /* ABOUT ME page */
-.about_me {
-    margin-top: -5%;
-    margin-left: 30%;
-    width: 40%;
-    height: 380px;
-    background-color: rgba(114, 159, 207, 0.7);
-    z-index: 1;
-    padding: 2%;
-    border-radius: 4px;
+#about_me {
+    margin-top: 0;
 }
 
-.intro_photo img {
-    width: 28%;
-    z-index: 1;
+#about_me h3 span {
+    color: #16a085;
+    font-weight: bold;
+}
+
+#about_me .introduction {
+    background-color: rgba(114, 159, 207, 0.7);
+    padding: 2%;
+    border-radius: 4px;
+    height: 100%;
+}
+
+#about_me .intro_photo img {
+    width: 100%;
     opacity: 1;
-    float: left;
     border-radius: 4px;
 }
-.about_content {
-    margin-left: 2%;
-    text-align: left;
-    float: right;
-    width: 60%;
+#about_me .about_content {
+    margin-top: -39%;
+    text-align: justify;
+    text-justify: inter-word;
 }
-.text-content{
+#about_me .text-content{
+    margin-top: 7%;
     font-size: 18px;
 }
-.social_buttons {
-    margin-top: 5%;
+#about_me .social_buttons {
+    margin-top: 7%;
 }
-.social_buttons img {
+#about_me .social_buttons img {
     width: 30px;
-    z-index: 1;
 }
-.social_buttons a:hover {
+#about_me .social_buttons a:hover {
     text-decoration: none;
 }
-.intro_photo span {
+#about_me .intro_photo span {
     text-align: left;
-    float: leftt;
-    position: absolute;
-    right: 60%;
-    top: 61%;
     font-size: 9.5px;
 }
