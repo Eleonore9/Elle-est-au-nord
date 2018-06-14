@@ -1,13 +1,12 @@
 /* Background */
 .site-wrapper {
-    /*position: absolute;*/
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .site-body {
@@ -16,11 +15,11 @@
 }
 
 #map {
-    position:absolute;
-    left:0;
-    top:0;
-    bottom:0;
-    width:100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
     opacity: 0.4;
     z-index: -10;
 }
@@ -178,7 +177,7 @@
     border-radius: 4px;
 }
 #about_me .about_content {
-    margin-top: -39%;
+    margin-top: -39.5%;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -187,7 +186,7 @@
     font-size: 18px;
 }
 #about_me .social_buttons {
-    margin-top: 7%;
+    margin-top: 7.5%;
 }
 #about_me .social_buttons img {
     width: 30px;
