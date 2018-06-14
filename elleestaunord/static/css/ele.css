@@ -65,6 +65,10 @@
     text-decoration: none;
     font-family: monospace;
     font-weight: bold;
+    cursor:pointer;
+}
+#hireme .card-header h4 button:hover {
+    color: #d8d6d6;
 }
 
 #hireme .card-header.web {
@@ -158,10 +162,11 @@
 #about_me {
     margin-top: 0;
 }
-
+#about_me h3 {
+    font-weight: bold;
+}
 #about_me h3 span {
     color: #16a085;
-    font-weight: bold;
 }
 
 #about_me .introduction {
