@@ -49,6 +49,7 @@ nav {
     height: 33px;
     margin-bottom: 20%;
     text-align: left;
+    white-space: nowrap;
 }
 
 .link-blog a {
