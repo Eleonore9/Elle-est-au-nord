@@ -121,14 +121,16 @@
     padding-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: flex-wrap;
+    align-items: stretch;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     background-color: rgba(114, 159, 207, 0.6);
     border-radius: 4px;
 }
 
 .project_wrapper {
+    flex: auto;
     position: relative;
     width: 30%;
     margin-bottom: 2%;
@@ -202,4 +204,30 @@
 #about_me .intro_photo span {
     text-align: left;
     font-size: 9.5px;
+}
+
+
+/* Responsive breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #about_me .about_content {
+	text-justify: none;
+    }
+    #portfolio .project_wrapper {
+	width: 60%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #portfolio .project_wrapper {
+	min-width: 45%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #portfolio .project_wrapper {
+	min-width: 35%;
+    }
 }
