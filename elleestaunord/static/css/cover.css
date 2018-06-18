@@ -37,11 +37,11 @@ body {
  */
 
 nav {
+    margin-top: -12%;
     font-family: monospace; !important
 }
 
 .nav {
-    margin: 24% 0 0 2%;
     width: 70%;
 }
 
