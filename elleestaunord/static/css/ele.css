@@ -63,6 +63,41 @@
 #hireme h3 {
     font-weight: bold;
 }
+#hireme .biz-intro a {
+    background-color: rgba(22, 160, 133, 0.7);
+}
+#hireme .biz-intro a:hover {
+    color: #d8d6d6;
+}
+
+#hireme .biz-intro .tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: bold;
+}
+#hireme .biz-intro .tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 14px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    width: 180%;
+    bottom: 130%;
+    left: 45%;
+    margin-left: -60px;
+}
+#hireme .biz-intro .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 #hireme .card-header h4 button {
     color: white;
@@ -76,11 +111,11 @@
 }
 
 #hireme .card-header.web {
-    background-color: rgb(41, 128, 185, 0.5);
+    background-color: rgba(41, 128, 185, 0.5);
 }
 
 #hireme .card-header.data {
-    background-color: rgb(51, 102, 204, 0.5);
+    background-color: rgba(51, 102, 204, 0.5);
 }
 
 #hireme .card-body {
@@ -172,7 +207,7 @@
     font-weight: bold;
 }
 #about_me h3 span {
-    color: #16a085;
+    background-color: rgba(22, 160, 133, 0.7);
 }
 
 #about_me .introduction {
