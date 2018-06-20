@@ -4,17 +4,25 @@ $( document ).ready(function() {
   var path = window.location.pathname;
 
   if(path=="/"){
-    $('.nav li.portfolio').removeClass('active');
-    $('.nav li.aboutme').removeClass('active')
-    $('.nav li.home').addClass('active');
+    $('.nav li.link-portfolio').removeClass('active');
+    $('.nav li.link-aboutme').removeClass('active');
+    $('.nav li.link-biz').removeClass('active');
+    $('.nav li.link-home').addClass('active');
   } else if(path=="/projects"){
-    $('.nav li.home').removeClass('active');
-    $('.nav li.aboutme').removeClass('active')
-    $('.nav li.portfolio').addClass('active');
+    $('.nav li.link-home').removeClass('active');
+    $('.nav li.link-aboutme').removeClass('active');
+    $('.nav li.link-biz').removeClass('active');
+    $('.nav li.link-portfolio').addClass('active');
   } else if(path=="/aboutme"){
-    $('.nav li.portfolio').removeClass('active');
-    $('.nav li.home').removeClass('active')
-    $('.nav li.aboutme').addClass('active');
+    $('.nav li.link-portfolio').removeClass('active');
+    $('.nav li.link-home').removeClass('active');
+    $('.nav li.link-biz').removeClass('active');
+    $('.nav li.link-aboutme').addClass('active');
+  } else if(path=="/hireme"){
+    $('.nav li.link-portfolio').removeClass('active');
+    $('.nav li.link-home').removeClass('active');
+    $('.nav li.link-aboutme').removeClass('active');
+    $('.nav li.link-biz').addClass('active');
   }
 
 });

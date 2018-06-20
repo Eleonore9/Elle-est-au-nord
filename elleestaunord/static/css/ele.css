@@ -1,29 +1,29 @@
 /* Background */
 .site-wrapper {
-	background-color: #3F527C;
-	opacity: 0.7;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
+.site-body {
+    flex: 1;
+    margin-top: 10%;
+}
+
 #map {
-    position:absolute;
-    left:0;
-    top:0;
-    bottom:0;
-    width:100%;
-    opacity: 0.2;
-    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -10;
 }
-.title {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.title img {
-    width: 40%;
-}
+
 
 /* Changes to the bootstrap cover style */
 .btn-default {
@@ -35,39 +35,278 @@
 
 /* INDEX page */
 #compass {
-        top: 20%;
-	padding-top: 20%;
-	background: url(/static/img/compass2.gif) no-repeat 50% center;
-	background-size: 60%;
-	width: 100%;
-	height: 400px;
+    margin-top: 0;
+    z-index: 1;
 }
 
-.lead.main {
-    font-size: 26px;
+#compass .compass-logo {
+    width: 20%;
+    overflow: hidden;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+#compass .compass-logo:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+#compass h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
     font-weight: bold;
 }
 
-/* PROJECTS page */
-#myCarousel .carousel-inner .carousel-caption {
-    background-color: #3F527C;
-    opacity: 0.85;
-    border-radius: 3.5px;
+#compass .lead {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: monospace;
 }
-#myCarousel .carousel-inner .carousel-caption a {
-    color: #269B84;
+
+/* BIZ page */
+#hireme {
+    margin-top: -2%;
+}
+
+#hireme h3 {
+    font-weight: bold;
+}
+#hireme .biz-intro a {
+    background-color: rgba(22, 160, 133, 0.7);
+}
+#hireme .biz-intro a:hover {
+    color: #d8d6d6;
+}
+
+#hireme .biz-intro .tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: bold;
+}
+#hireme .biz-intro .tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 14px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    width: 180%;
+    bottom: 130%;
+    left: 45%;
+    margin-left: -60px;
+}
+#hireme .biz-intro .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#hireme .card-header h4 button {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor:pointer;
+}
+#hireme .card-header h4 button:hover {
+    color: #d8d6d6;
+}
+
+#hireme .card-header.web {
+    background-color: rgba(41, 128, 185, 0.5);
+}
+
+#hireme .card-header.data {
+    background-color: rgba(51, 102, 204, 0.5);
+}
+
+#hireme .card-body {
+    background-color: rgba(114, 159, 207, 0.4);
+    color: black;
+    text-align: left;
+}
+
+#hireme .card-body h5 {
+    font-family: monospace;
+}
+
+#hireme .card-body a {
+    color: #16a085;
+    font-weight: bold;
+}
+#hireme .card-body a:hover {
+    color: white;
+}
+
+#hireme .biz-intro {
+    background-color: rgba(114, 159, 207, 0.7);
+    padding: 1%;
+    border-radius: 4px;
+}
+
+#hireme .services {
+    padding: 1%;
+}
+
+/* PROJECTS page */
+#portfolio {
+    margin-top: -5%;
+}
+
+#portfolio h3 {
+    font-weight: bold;
+}
+
+.projects {
+    margin-top: 2%;
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: flex-wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: rgba(114, 159, 207, 0.6);
+    border-radius: 4px;
+}
+
+.project_wrapper {
+    flex: auto;
+    position: relative;
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.projects img {
+    width: 85%;
+    position: relative;
+}
+
+.project_info {
+    padding: 1%;
+    position: absolute;
+    margin: 5% 0 0 7.5%;
+    width: 85%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.project_info .tech {
+    color: #16a085;
+    font-weight: bold;
+}
+
+.project_info .project {
+    color: #2980b9;
+    font-weight: bold;
 }
 
 /* ABOUT ME page */
-.about_me {
-    background-color: #3F527C;
-    opacity: 0.55;
-    padding: 0.2% 0 3% 0;
-    border-radius: 3.5px;
+#about_me {
+    margin-top: -2%;
 }
-.social_buttons img {
-    z-index: 1;
+#about_me h3 {
+    font-weight: bold;
 }
-.social_buttons a:hover {
+#about_me h3 span {
+    background-color: rgba(22, 160, 133, 0.7);
+}
+
+#about_me .introduction {
+    background-color: rgba(114, 159, 207, 0.7);
+    padding: 2%;
+    border-radius: 4px;
+    height: 100%;
+}
+#about_me .intro_photo img {
+    width: 100%;
+    opacity: 1;
+    border-radius: 4px;
+}
+#about_me .about_content {
+    margin-top: -52.7%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#about_me .text-content{
+    margin-top: 7%;
+    font-size: 18px;
+}
+#about_me .social_buttons {
+    margin-top: 7.5%;
+}
+#about_me .social_buttons img {
+    width: 30px;
+}
+#about_me .social_buttons a:hover {
     text-decoration: none;
+}
+#about_me .intro_photo span {
+    text-align: left;
+    font-size: 9.5px;
+}
+
+
+/* Responsive breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    nav .navbar-toggler {
+	border-color: #16a085 !important;
+	background-color: rgba(51, 102, 204, 0.5) !important;
+    }
+    #about_me .intro_photo img {
+	margin: 10% 20% 0 -13%;
+	max-width: 180px;
+    }
+    #about_me .about_content {
+	text-justify: none;
+	margin-top: 12%;
+    }
+    #portfolio .project_wrapper {
+	width: 60%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    nav .navbar-toggler {
+	border-color: #16a085 !important;
+	background-color: rgba(51, 102, 204, 0.5) !important;
+    }
+    #about_me .intro_photo img {
+	margin: 10% 30% 0 2%;
+	max-width: 200px;
+    }
+    #about_me .about_content {
+	text-justify: none;
+	margin-top: 8%;
+    }
+    #portfolio .project_wrapper {
+	min-width: 55%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #about_me .about_content {
+	text-justify: none;
+    }
+    #portfolio .project_wrapper {
+	min-width: 45%;
+    }
+}
+
+/* Larger devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #about_me .about_content {
+	text-justify: none;
+    }
+    #portfolio .project_wrapper {
+	min-width: 35%;
+    }
 }

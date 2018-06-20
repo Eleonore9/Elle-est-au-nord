@@ -4,76 +4,82 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta name="description" content="Hi there! I am a programmer and data scientist.">
+    <meta name="description" content="I am a freelance developer and data scientist.">
     <meta name="author" content="Éléonore Mayola">
-    <link rel="shortcut icon" href="/static/img/favicon_r.png">
+    <link rel="shortcut icon" href="/static/img/favicon.png">
     <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css">
-    <!--<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />-->
     <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
-    <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
     <script src="/static/js/map.js"></script>
 
 
     <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png">
 
-    <title>Éléonore</title>
+    <title>Elle est au nord</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="/static/css/ele.css">
     <link rel="stylesheet" type="text/css" href="/static/css/cover.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
   </head>
 
   <body onload="initmap();">
 
-    <div class="site-wrapper">
+        <div class="container-fluid site-wrapper">
 
-      <div class="site-wrapper-inner">
+          <div class="row site-body">
 
-        <div class="cover-container">
+	    <nav class="col-md-3 col-4 navbar navbar-expand-lg navbar-light">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Éléonore</h3>
-              <ul class="nav masthead-nav">
-		<li class="biz"><a target="_blank" href="http://elle-est-au-nord.github.io/">Hire me!</a></li>
-		<li class="blog"><a target="_blank" href="http://eleonore9.github.io/">Blog</a></li>
-                <li class="home"><a href="/">Home</a></li>
-                <li class="portfolio"><a href="{{url_for("projects")}}">Portfolio</a></li>
-                <li class="aboutme"><a href="{{url_for("aboutme")}}">About me</a></li>
-              </ul>
-            </div>
-          </div>
-	  <div class="title">
-	    <img src="/static/img/banner.gif"  alt="banner title">
-          </div>
+		<ul class="nav flex-sm-column mr-auto mt-2 mt-lg-0">
+		  <li class="nav-item link-home">
+		    <a href="{{url_for("index")}}">Home</a>
+		  </li>
+		  <li class="nav-item link-biz">
+		    <a href="{{url_for("hireme")}}">Hire me</a>
+		  </li>
+		  <li class="nav-item link-aboutme">
+		    <a href="{{url_for("aboutme")}}">About</a>
+		  </li>
+		  <li class="nav-item link-portfolio">
+		    <a href="{{url_for("projects")}}">Portfolio</a>
+		  </li>
+		  <li class="nav-item link-blog">
+		    <a target="_blank" href="http://eleonore9.github.io/">Blog</a>
+		  </li>
+		</ul>
+	      </div>
+	    </nav>
 
-          <div class="inner cover">
-
+	    <div class="col-md-8 col-7 cover">
 		{% block body %}{% endblock %}
+            </div>
+
           </div>
 
-          <div class="mastfoot">
+          <footer class="mastfoot">
             <div class="inner">
             	<p>
-		Copyright 2018 - <a href="https://twitter.com/eleonoremayola/" target="_blank">Eleonore</a> B-)
+		Elle est au nord © 2018
 		</p>
             </div>
-          </div>
+          </footer>
 
-        </div>
-
-      </div>
 
     </div>
+    <div id="map"></div>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+
     <script src="/static/js/ele.js"></script>
 
   </body>
