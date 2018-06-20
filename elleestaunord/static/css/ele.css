@@ -39,8 +39,15 @@
     z-index: 1;
 }
 
-#compass img {
+#compass .compass-logo {
     width: 20%;
+    overflow: hidden;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+#compass .compass-logo:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 #compass h1 {
