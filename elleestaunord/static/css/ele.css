@@ -5,8 +5,9 @@
     min-height: 100vh;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    background-color: rgba(114, 159, 207, 0.55);
 }
 
 .site-body {
@@ -23,7 +24,6 @@
     opacity: 0.4;
     z-index: -10;
 }
-
 
 /* Changes to the bootstrap cover style */
 .btn-default {
@@ -224,12 +224,12 @@
     height: 100%;
 }
 #about_me .intro_photo img {
-    width: 100%;
+    width: 77%;
     opacity: 1;
     border-radius: 4px;
 }
 #about_me .about_content {
-    margin-top: -52.7%;
+    margin-top: -42%;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -293,8 +293,12 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    #about_me .intro_photo img {
+	width: 100%;
+    }
     #about_me .about_content {
 	text-justify: none;
+	margin-top: -52.7%
     }
     #portfolio .project_wrapper {
 	min-width: 45%;
@@ -303,8 +307,12 @@
 
 /* Larger devices (1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+    #about_me .intro_photo img {
+	width: 100%;
+    }
     #about_me .about_content {
 	text-justify: none;
+	margin-top: -52.7%
     }
     #portfolio .project_wrapper {
 	min-width: 35%;

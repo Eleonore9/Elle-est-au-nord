@@ -26,9 +26,10 @@ a:hover {
 
 html,
 body {
+    margin: 0 auto;
+    width: 100%;
     color: #fff;
     text-align: center;
-    background-color: rgba(114, 159, 207, 0.55);
 }
 
 
@@ -42,7 +43,8 @@ nav {
 }
 
 .nav {
-    width: 70%;
+    max-width: 100%;
+    display: block;
 }
 
 .nav > li {
@@ -88,7 +90,7 @@ nav {
  */
 
 .cover {
-    margin: 2% 0 0 -5%;
+    margin: 2% 0 0 5%;
     z-index: 2;
 }
 .cover .btn-lg {
@@ -102,7 +104,6 @@ nav {
  */
 
 .mastfoot {
-    bottom: 0;
-    margin-left: 5%;
+    margin: 2% 0 0 9%;
     color: #fff;
  }

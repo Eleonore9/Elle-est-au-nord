@@ -32,13 +32,13 @@
 
           <div class="row site-body">
 
-	    <nav class="col-md-3 col-4 navbar navbar-expand-lg navbar-light">
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	    <nav class="navbar navbar-expand-lg navbar-light">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	      </button>
-	      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	      <div class="collapse navbar-collapse" id="navbarToggler">
 
-		<ul class="nav flex-sm-column mr-auto mt-2 mt-lg-0">
+		<ul class="nav mr-auto mt-2 mt-lg-0">
 		  <li class="nav-item link-home">
 		    <a href="{{url_for("index")}}">Home</a>
 		  </li>
@@ -58,11 +58,11 @@
 	      </div>
 	    </nav>
 
-	    <div class="col-md-8 col-7 cover">
+	    <div class="col-lg-10 offset-lg-5 col-md-11 offset-md-2 col-sm-11 col-11 cover">
 		{% block body %}{% endblock %}
             </div>
 
-          </div>
+          </div> <!-- row -->
 
           <footer class="mastfoot">
             <div class="inner">
@@ -72,9 +72,9 @@
             </div>
           </footer>
 
+	 <div id="map"></div>
+	</div> <!-- container -->
 
-    </div>
-    <div id="map"></div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
