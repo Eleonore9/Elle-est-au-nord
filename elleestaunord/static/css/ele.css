@@ -254,14 +254,35 @@
 
 /* Responsive breakpoints */
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) {
+@media (max-width: 559.98px) {
     nav .navbar-toggler {
 	border-color: #16a085 !important;
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
     #about_me .intro_photo img {
-	margin: 10% 20% 0 -13%;
+	margin-top: 10%;
 	max-width: 180px;
+    }
+    #about_me .about_content {
+	text-justify: none;
+	margin-top: 12%;
+    }
+    #portfolio .project_wrapper {
+	width: 60%;
+    }
+}
+/* Small-ish */
+@media (min-width: 560px) and (max-width: 767.98px) {
+    nav .navbar-toggler {
+	border-color: #16a085 !important;
+	background-color: rgba(51, 102, 204, 0.5) !important;
+    }
+    #about_me .intro_photo img {
+	width: 60%;
+	margin: 10% 35% 0 0;
+    }
+    #about_me .intro_photo span {
+	margin-right: 35%;
     }
     #about_me .about_content {
 	text-justify: none;
@@ -279,8 +300,11 @@
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
     #about_me .intro_photo img {
-	margin: 10% 30% 0 2%;
+	margin: 10% 33% 0 0;
 	max-width: 200px;
+    }
+    #about_me .intro_photo span {
+	margin-right: 34%;
     }
     #about_me .about_content {
 	text-justify: none;
