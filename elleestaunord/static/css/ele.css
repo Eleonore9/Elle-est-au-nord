@@ -164,7 +164,7 @@
 
 .projects {
     margin-top: 2%;
-    padding: 3%;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -181,7 +181,7 @@
     position: relative;
     display: inline-block;
     width: 30%;
-    margin-bottom: 2%;
+    margin: 1%;
 }
 
 .projects img {
@@ -268,6 +268,9 @@
     #about_me .about_content {
 	text-justify: none;
 	margin-top: 12%;
+    }
+    #portfolio .projects {
+	overflow: hidden visible;
     }
     #portfolio .project_wrapper {
 	width: 90%;

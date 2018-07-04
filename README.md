@@ -5,4 +5,4 @@
 Find my website at <http://Elle-est-au-nord.com> or <http://Elle-est-au-nord.herokuapp.com>.
 
 ### Personal website redesign
-![screenshotEleonore](elleestaunord/static/img/new-design.png)
+![screenshotEleonore](elleestaunord/static/img/new_design.png)
