@@ -136,11 +136,19 @@
 }
 
 #hireme .card-body a {
-    color: #16a085;
     font-weight: bold;
+    color: #333;
 }
 #hireme .card-body a:hover {
     color: white;
+}
+#hireme .card-body .project {
+    font-weight: bold;
+    color: #16a085;
+}
+#hireme .card-body .client {
+    font-weight: bold;
+    color: #3366cc;
 }
 
 #hireme .biz-intro {
