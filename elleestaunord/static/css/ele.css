@@ -133,6 +133,7 @@
 
 #hireme .card-body h5 {
     font-family: monospace;
+    font-weight: bold;
 }
 
 #hireme .card-body a {
