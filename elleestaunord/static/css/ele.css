@@ -7,7 +7,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(114, 159, 207, 0.55);
+    /*background-color: rgba(114, 159, 207, 0.55);*/
+    background-image: url("../img/blue_background.png");
 }
 
 .site-body {
@@ -35,17 +36,21 @@
 
 /* INDEX page */
 #compass {
-    margin-top: 0;
-    z-index: 1;
+    margin-top: -15%;
+    margin-left: 20%;
+    /*z-index: 1;*/
+    background-image: url("../img/compass-logo-large.png");
+    height: 130%;
+    background-repeat: no-repeat;
 }
 
-#compass .compass-logo {
-    width: 20%;
+#compass img {
+    /*width: 30%;*/
     overflow: hidden;
     transition-duration: 0.7s;
     transition-property: transform;
 }
-#compass .compass-logo:hover {
+#compass img:hover {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
 }
@@ -56,7 +61,14 @@
     font-weight: bold;
 }
 
+#compass .cover-heading {
+    margin-top: 10%;
+    margin-left: -40%;
+}
+
 #compass .lead {
+    margin-top: 20%;
+    margin-left: -40%;
     font-size: 34px;
     font-weight: bold;
     font-family: monospace;
@@ -220,6 +232,7 @@
 /* ABOUT ME page */
 #about_me {
     margin-top: -2%;
+    height: 71%;
 }
 #about_me h3 {
     font-weight: bold;
@@ -229,7 +242,7 @@
 }
 
 #about_me .introduction {
-    background-color: rgba(114, 159, 207, 0.7);
+    background-color: rgba(114, 159, 207, 0.5);
     padding: 2%;
     border-radius: 4px;
     height: 100%;
