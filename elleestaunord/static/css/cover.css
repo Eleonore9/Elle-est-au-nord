@@ -46,7 +46,7 @@ body {
  */
 
 nav {
-    margin-top: -7%;
+    /*margin-top: -7%;*/
     font-family: monospace; !important
 }
 
@@ -116,6 +116,7 @@ nav {
     color: #fff;
  }
 .mastfoot .inner {
-   margin-left: -10%;
+   margin-top: 3%;
+   margin-left: 40%;
 }
 

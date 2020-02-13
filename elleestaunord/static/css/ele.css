@@ -3,7 +3,8 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100%;
+    /*width: 100%;*/
     top: 0;
     left: 0;
     bottom: 0;
@@ -12,7 +13,7 @@
 
 .site-body {
     flex: 1;
-    margin-top: 10%;
+    /*margin-top: 10%;*/
 }
 
 
@@ -166,15 +167,16 @@
 
 /* PROJECTS page */
 #portfolio {
-    margin-top: -5%;
+    /*margin-top: -5%;*/
 }
 
 #portfolio h3 {
+    text-align: center;
     font-weight: bold;
 }
 
 .projects {
-    margin-top: 8%;
+    margin-top: 4%;
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -203,7 +205,7 @@
 .project_info {
     padding: 1%;
     position: absolute;
-    margin: 5% 0 0 5%;
+    /*margin: 5% 0 0 5%;*/
     width: 90%;
     z-index: 10;
     background: rgba(0, 0, 0, 0.65);
@@ -314,7 +316,7 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 /* Small-ish */
 @media (min-width: 560px) and (max-width: 767.98px) {
     #compass img {
-        width: 80%;
+        width: 70%;
     }
     nav .navbar-toggler {
 	background-color: rgba(51, 102, 204, 0.5) !important;
@@ -337,6 +339,12 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    #compass img {
+        width: 80%;
+    }
+    nav {
+        margin-top: 5%;
+    }
     nav .navbar-toggler {
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
@@ -358,6 +366,12 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    #compass img {
+        width: 90%;
+    }
+    nav {
+        margin-top: 5%;
+    }
     #about_me .intro_photo img {
 	width: 100%;
     }
@@ -372,6 +386,9 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 
 /* Larger devices (1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+    nav {
+        margin-top: 5%;
+    }
     #about_me .intro_photo img {
 	width: 100%;
     }
