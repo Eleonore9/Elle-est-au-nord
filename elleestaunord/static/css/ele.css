@@ -3,32 +3,18 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    /*min-height: 100%;*/
-    height: 100%;
+    min-height: 100%;
     top: 0;
     left: 0;
     bottom: 0;
-    /*width: 100%;*/
-    /*background-color: rgba(114, 159, 207, 0.55);*/
     background-image: url("../img/blue_background.png");
 }
 
 .site-body {
-    /*overflow: scroll;*/
     flex: 1;
-    /*margin-top: 10%;*/
+    margin-top: 10%;
 }
 
-
-/*#map {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    opacity: 0.4;
-    z-index: -10;
-}*/
 
 /* Changes to the bootstrap cover style */
 .btn-default {
@@ -40,24 +26,11 @@
 
 /* INDEX page */
 #compass {
-    position: absolute;
     text-align: center;
-    /*margin: 0;
-    padding: 0;
-    border: 0;*/
-    /*margin-top: -8%;
-    margin-left: -4%;*/
-    /*z-index: 1;*/
-    /*background-image: url("../img/compass-logo-large.png");*/
-    height: 100%;
     width: 90%;
-    /*background-repeat: no-repeat;*/
 }
 
 #compass img {
-    /*margin-top: -10%;
-    margin-left: 37%;
-    max-width: 100%;*/
     overflow: hidden;
     transition-duration: 0.7s;
     transition-property: transform;
@@ -76,7 +49,6 @@
 #compass .cover-heading {
     position: relative;
     margin-top: -42%;
-    /*margin-left: 50%;*/
     text-shadow: 1px 1px 2px grey, 0 0 1em white;
 }
 
@@ -202,7 +174,7 @@
 }
 
 .projects {
-    margin-top: 2%;
+    margin-top: 8%;
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -249,8 +221,7 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 
 /* ABOUT ME page */
 #about_me {
-    margin-top: -2%;
-    height: 71%;
+    height: 55%;
 }
 #about_me h3 {
     font-weight: bold;
@@ -260,10 +231,19 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 }
 
 #about_me .introduction {
+    margin-top: 8%;
     background-color: rgba(114, 159, 207, 0.5);
     padding: 2%;
     border-radius: 4px;
-    height: 100%;
+    /*max-width: 100%;*/
+    /*height: 100%;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+#about_me .intro_photo {
+    flex: auto;
+    position: relative;
+    display: inline-block;
 }
 #about_me .intro_photo img {
     width: 77%;
@@ -271,15 +251,24 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
     border-radius: 4px;
 }
 #about_me .about_content {
+    /*flex: auto;
+    position: relative;*/
+    display: inline-block;
     margin-top: -42%;
     text-align: justify;
     text-justify: inter-word;
 }
 #about_me .text-content{
+    flex: auto;
+    position: relative;
+    display: inline-block;
     margin-top: 7%;
     font-size: 18px;
 }
 #about_me .social_buttons {
+    flex: auto;
+    position: relative;
+    display: inline-block;
     margin-top: 7.5%;
 }
 #about_me .social_buttons img {
@@ -297,8 +286,10 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 /* Responsive breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 559.98px) {
+    #compass img {
+        width: 60%;
+    }
     nav .navbar-toggler {
-	/*border-color: #16a085 !important;*/
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
     #about_me .intro_photo img {
@@ -322,8 +313,10 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 }
 /* Small-ish */
 @media (min-width: 560px) and (max-width: 767.98px) {
+    #compass img {
+        width: 80%;
+    }
     nav .navbar-toggler {
-	/*border-color: #16a085 !important;*/
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
     #about_me .intro_photo img {
@@ -345,7 +338,6 @@ https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     nav .navbar-toggler {
-	/*border-color: #16a085 !important;*/
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
     #about_me .intro_photo img {

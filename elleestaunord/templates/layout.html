@@ -7,9 +7,7 @@
     <meta name="description" content="I am a freelance developer and data scientist.">
     <meta name="author" content="Éléonore Mayola">
     <link rel="shortcut icon" href="/static/img/favicon.png">
-    <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css">
-    <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
-    <!--<script src="/static/js/map.js"></script>-->
+
 
 
     <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png">
@@ -26,10 +24,9 @@
 
   </head>
   <body>
-  <!--<body onload="initmap();">-->
 
-        <div class="container-fluid site-wrapper">
-
+        <!--<div class="container-fluid site-wrapper">-->
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
           <div class="row site-body">
 
 	    <nav class="navbar navbar-expand-lg navbar-light">
@@ -42,9 +39,6 @@
 		  <li class="nav-item link-home">
 		    <a href="{{url_for("index")}}">Home</a>
 		  </li>
-		  <!--<li class="nav-item link-biz">
-		    <a href="{{url_for("hireme")}}">Hire me</a>
-		  </li>-->
 		  <li class="nav-item link-aboutme">
 		    <a href="{{url_for("aboutme")}}">About me</a>
 		  </li>
@@ -64,7 +58,7 @@
 
           </div> <!-- row -->
 
-          <footer class="mastfoot">
+          <footer class="mastfoot mt-auto">
             <div class="inner">
             	<p>
 		Elle est au nord - © - 2020
@@ -72,7 +66,6 @@
             </div>
           </footer>
 
-	 <!--<div id="map"></div>-->
 	</div> <!-- container -->
 
 
