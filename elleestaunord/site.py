@@ -16,10 +16,6 @@ app.config.update(
 def index():
 	return render_template("index.html")
 
-@app.route("/hireme", methods=["GET"])
-def hireme():
-        return render_template("hireme.html")
-
 @app.route("/aboutme", methods=["GET"])
 def aboutme():
 	return render_template("aboutme.html")
@@ -28,6 +24,19 @@ def aboutme():
 def projects():
 	return render_template("projects.html")
 
+@app.route("/projects/tech", methods=["GET"])
+def tech_projects():
+	return render_template("tech-projects.html")
+
+@app.route("/projects/dataviz", methods=["GET"])
+def dataviz():
+	return render_template("dataviz.html")
+
+@app.route("/projects/art", methods=["GET"])
+def art():
+	return render_template("art-projects.html")
+
+
 if __name__ == "__main__":
-	#port = int(os.environ.get("PORT", 5000))
+	port = int(os.environ.get("PORT", 5000))
 	app.run(host='0.0.0.0', port=port)

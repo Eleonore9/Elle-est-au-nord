@@ -89,14 +89,85 @@
     font-weight: bold;
     text-shadow: #2980b9 0px 0px 0px, #2980b9 -1px 1px 0px, #2980b9 -2px 2px 0px, #2980b9 -3px 3px 0px, #3366cc -4px 4px 0px, #3366cc -5px 5px 0px, #3366cc -6px 6px 0px;
 }
-.hire_me:hover {
-    text-shadow: #16a085 0px 0px 0px, #16a085 0px 1px 0px, #16a085 0px 2px 0px, #16a085 -1px 3px 0px, #3366cc -2px 4px 0px, #3366cc -3px 5px 0px, #3366cc -4px 6px 0px;
+
+#hireme .card-body a {
+    font-weight: bold;
+    color: #333;
+}
+#hireme .card-body a:hover {
+    color: white;
+}
+#hireme .card-body .project {
+    font-weight: bold;
+    color: #16a085;
+}
+#hireme .card-body .client {
+    font-weight: bold;
+    color: #3366cc;
 }
 
-.projects {
-    clear: both;
-    margin: 2% 0;
+#hireme .biz-intro {
+    background-color: rgba(114, 159, 207, 0.7);
     padding: 1%;
+    border-radius: 4px;
+}
+
+#hireme .services {
+    padding: 1%;
+}
+
+/* PROJECTS INTRO page */
+#projects-intro .projects {
+    margin-top: 4%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(114, 159, 207, 0.6);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#projects-intro .project_wrapper {
+    /*flex: auto;
+    position: relative;*/
+    display: flex;
+    width: 30%;
+    margin: 1%;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+#projects-intro .project_info {
+    padding: 1%;
+    /*position: absolute;*/
+    width: 90%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.65);
+}
+ 
+#projects-intro img {
+    max-width: 80%;
+    position: relative;
+    /*display: block;*/
+}
+
+/* PROJECTS page */
+#portfolio {
+    /*margin-top: -5%;*/
+}
+
+#portfolio h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#portfolio .projects {
+    margin-top: 4%;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -108,7 +179,7 @@
     overflow: hidden;
 }
 
-.project_wrapper {
+#portfolio .project_wrapper {
     flex: auto;
     position: relative;
     display: inline-block;
@@ -141,15 +212,15 @@
     text-decoration: underline rgb(22, 160, 133);
 }
 
-.projects img {
+#portfolio .projects img {
     max-width: 90%;
     position: relative;
 }
 
-.project_info {
-    padding: 2.5%;
+#portfolio .project_info {
+    padding: 1%;
     position: absolute;
-    width: 100%;
+    width: 90%;
     z-index: 10;
     background: rgba(0, 0, 0, .7);
 }
@@ -157,12 +228,12 @@
     background: rgba(0, 0, 0, .4);
 }
 
-.project_info .tech {
+#portfolio .project_info .tech {
     color: #16a085;
     font-weight: bold;
 }
 
-.project_info .project {
+#portfolio .project_info .project {
     color: #2980b9;
     font-weight: bold;
 }

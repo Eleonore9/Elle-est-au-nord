@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div id="projects-intro">
+  <h3>PROJECTS</h3>
+  <div class="projects">
+    <div class="project_wrapper">
+      <a href="{{url_for("tech_projects")}}">
+        <div class="project_info">
+          <h4><b>Tech Projects</b></h4>
+        </div>
+        <img alt="Python script screenshot" src="/static/img/projects/textract-poc_intro.jpg">
+      </a>
+    </div>
+    <div class="project_wrapper">
+      <a href="{{url_for("dataviz")}}">
+        <div class="project_info">
+          <h4><b>Creative Data Viz</b></h4>
+        </div>
+        <img alt="First page of dataviz zine screenshot" src="/static/img/dataviz/tour-of-dataviz-python_intro.jpg">
+      </a>
+    </div>
+    <div class="project_wrapper">
+      <a href="{{url_for("art")}}">
+        <div class="project_info">
+          <h4><b>Art Projects</b></h4>
+        </div>
+        <img alt="Self-portrait half photo, half digital drawing" src="/static/img/art/toon_me_drawing_intro.jpg">
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

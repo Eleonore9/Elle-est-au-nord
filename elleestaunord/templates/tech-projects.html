@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div id="portfolio">
+  <h3>TECH</h3>
+  <div class="projects">
+    <div class="project_wrapper">
+      <div class="project_info">
+	<h4><b>Client project</b></h4>
+	<p><span class="project">Proof of concept</span> to extract text from PDF files <span class="tech">Python, Amazon Web Services (AWS Textract)</span></p>
+      </div>
+      <img alt="Python script screenshot" src="/static/img/projects/textract_poc.png">
+    </div>
+    <div class="project_wrapper">
+      <div class="project_info">
+	<h4><b>Personal project</b></h4>
+	<p><span class="project">Jupyter dashboard</span> looking at life expecancy data from Gapminder.org with <span class="tech">Pandas, Altair</span> and <span class="tech">interactive widgets</span>.</p>
+	<p><a href="https://github.com/Eleonore9/tour_dataviz_python/blob/master/code_examples/Gapminder_example.ipynb" target="_blank"><span class="badge badge-secondary">Github repo</span></a></p>
+      </div>
+      <img alt="Jupyter dashboard view" src="/static/img/projects/gapminder_dashboard.png">
+    </div>
+    <div class="project_wrapper">
+      <div class="project_info">
+	<h4><b>Personal project</b></h4>
+	<p><span class="project">Text Analysis</span> aims at comparing texts content in letters in different languages using <span class="tech">Python</span> and <span class="tech">Pandas</span> in a <span class="tech">Jupyter notebook</span></p>
+	<p><a href="https://github.com/Eleonore9/text_analysis" target="_blank"><span class="badge badge-secondary">Github repo</span></a></p>
+      </div>
+      <img alt="notebook screenshot" src="/static/img/projects/text_analysis.png">
+    </div>
+    <div class="project_wrapper">
+      <div class="project_info">
+	<h4><b>Client project</b></h4>
+	<p><span class="project">ProTechMe</span> <span class="tech">Nodejs</span> app gets chatbot conversations and convert them to a PDF document to help people obtain a restraining order.</p>
+	<p><a href="https://github.com/TechForJustice/protechmepdfconversion" target="_blank"><span class="badge badge-secondary">Github repo</span></a></p>
+      </div>
+      <img alt="Documentation screenshot" src="/static/img/projects/pdf-conversion.png">
+    </div>
+    <div class="project_wrapper">
+      <div class="project_info">
+	<h4><b>Conference talk</b></h4>
+	<p><span class="project">Telling stories with data</span> (PyCon Sweden 2017) explores rapid data viz using Altair, a <span class="tech">Python</span> API for <span class="tech">Vega</span><br/>
+	<a href="https://eleonore9.github.io/ebola_outbreaks/" target="_blank"> <span class="badge badge-secondary">Ebola data viz</span> </a>and <a href="https://github.com/Eleonore9/pyconse17/blob/master/slides-ele-pyconse17.pdf" target="_blank"><span class="badge badge-secondary">talk slides</span></a></p>
+      </div>
+      <img alt="Ebola dataset data viz screenshot" src="/static/img/projects/stories-with-data.png">
+    </div>
+    <div class="project_wrapper">
+      <div class="project_info">
+	<h4><b>Conference talk</b></h4>
+	<p><span class="project">Get meaning from scientific articles</span> (PyData London + PyCon UK 2015) uses <span class="tech">Python</span> libraries <span class="tech">Gensim</span> and <span class="tech">Scikit-learn</span> to classify articles from their content.</p>
+	<p><a href="https://github.com/Eleonore9/get-articles-meaning" target="_blank"><span class="badge badge-secondary">Github repo</span></a> and <a href="https://nbviewer.jupyter.org/format/slides/github/Eleonore9/get-articles-meaning/blob/master/notebooks/Eleonore_PyCon_UK2015.ipynb#/" target="_blank"><span class="badge badge-secondary">talk slides</span></a></p>
+      </div>
+      <img alt="Jupyter notebook screenshot" src="/static/img/projects/articles-meaning.png">
+    </div>
+  </div>
+</div>
+
+{% endblock %}
