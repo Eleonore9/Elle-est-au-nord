@@ -123,7 +123,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 100%;
     height: 100%;
     background-color: rgba(114, 159, 207, 0.6);
@@ -132,27 +132,28 @@
 }
 
 #projects-intro .project_wrapper {
-    /*flex: auto;
-    position: relative;*/
-    display: flex;
+    flex: auto;
+    position: relative;
+    display: inline-block;
     width: 30%;
     margin: 1%;
-    /*align-items: center;*/
-    justify-content: center;
+    border: 3px solid rgb(237, 234, 234, .6);
+    border-radius: 2px;
 }
 
 #projects-intro .project_info {
     padding: 1%;
-    /*position: absolute;*/
-    width: 90%;
+    position: absolute;
+    width: 43%;
+    height: 100%;
     z-index: 10;
     background: rgba(0, 0, 0, 0.65);
 }
  
 #projects-intro img {
-    max-width: 80%;
+    max-width: 90%;
     position: relative;
-    /*display: block;*/
+    float: right;
 }
 
 /* PROJECTS page */
@@ -338,6 +339,16 @@
     #portfolio .project_info {
 	margin: 0 0 0 5%;
     }
+    #projects-intro .projects {
+	overflow: hidden visible;
+    }
+    #projects-intro .project_wrapper {
+	width: 90%;
+	margin-bottom: 15%;
+    }
+    #projects-intro .project_info {
+	margin: 0 0 0 5%;
+    }
 }
 /* Small-ish */
 @media (min-width: 560px) and (max-width: 767.98px) {
@@ -359,6 +370,9 @@
 	margin-top: 12%;
     }
     #portfolio .project_wrapper {
+	width: 60%;
+    }
+    #projects-intro .project_wrapper {
 	width: 60%;
     }
 }
@@ -388,6 +402,9 @@
     #portfolio .project_wrapper {
 	min-width: 55%;
     }
+    #projects-intro .project_wrapper {
+	min-width: 55%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -408,6 +425,9 @@
     #portfolio .project_wrapper {
 	min-width: 45%;
     }
+    #projects-intro .project_wrapper {
+	min-width: 45%;
+    }
 }
 
 /* Larger devices (1200px and up) */
@@ -423,6 +443,9 @@
 	margin-top: -52.7%
     }
     #portfolio .project_wrapper {
+	min-width: 35%;
+    }
+    #projects-intro .project_wrapper {
 	min-width: 35%;
     }
 }
