@@ -154,7 +154,7 @@
     float: right;
 }
 
-/* PROJECTS page */
+/* Tech Projects page */
 #portfolio {
     /*margin-top: -5%;*/
 }
@@ -245,6 +245,54 @@
     font-family: monospace;
     font-weight: bold;
 }
+
+/* Creative Dataviz page */
+#dataviz h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#dataviz h4 {
+    margin-left: 4%;
+}
+
+#dataviz .projects {
+    margin: 2% 4%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(114, 159, 207, 0.6);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#dataviz .project_wrapper {
+    flex: auto;
+    position: relative;
+    display: inline-block;
+    max-width: 15%;
+    margin: 1% 3% 1% 1%;
+    /*cursor: pointer;*/
+}
+
+#dataviz .projects img {
+    max-width: 100%;
+    position: relative;
+}
+
+#dataviz .project_info {
+    padding: 2%;
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+} 
 
 /* ABOUT ME page */
 #about_me {

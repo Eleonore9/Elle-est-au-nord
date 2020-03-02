@@ -25,4 +25,14 @@ $( document ).ready(function() {
     $('.nav li.link-biz').addClass('active');
   }
 
+
+  $("#dataviz .project_info").hover(
+    function() {
+      $(this).css("visibility", "visible");
+    },
+    function() {
+      $(this).css("visibility", "hidden");
+    }
+  );
+
 });
