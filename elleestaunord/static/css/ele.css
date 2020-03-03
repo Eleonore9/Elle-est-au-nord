@@ -176,7 +176,7 @@
 }
 
 .projects {
-    margin-top: 4%;
+    margin: 2% 0;
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -197,6 +197,27 @@
     margin: 1%;
 }
 
+.project_wrapper.color_bg:nth-child(1n) {
+    background-color: rgba(114, 159, 207, .7);
+}
+.project_wrapper.color_bg:nth-child(2n) {
+    background-color: rgba(41, 128, 185, .7);
+}
+.project_wrapper.color_bg:nth-child(3) {
+    background-color: rgba(22, 160, 133, .7);
+}
+.project_wrapper.color_bg:nth-child(4n) {
+    background-color: rgba(51, 102, 204, .7);
+}
+
+.project_link {
+    color: rgb(22, 160, 133);
+} 
+.project_link:hover {
+    color: rgb(22, 160, 133);
+    text-decoration: underline rgb(22, 160, 133);
+}
+
 .projects img {
     max-width: 90%;
     position: relative;
@@ -206,13 +227,13 @@
     padding: 1%;
     position: absolute;
     /*margin: 5% 0 0 5%;*/
-    width: 90%;
+    width: 100%;
     z-index: 10;
     background: rgba(0, 0, 0, 0.65);
 }
 
 .project_info .tech {
-https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
+    color: #16a085;
     font-weight: bold;
 }
 
