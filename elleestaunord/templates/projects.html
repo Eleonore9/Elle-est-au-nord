@@ -3,52 +3,91 @@
 
 
 <div id="portfolio">
-  <h3>Examples of projects</h3>
+  <h3>Freelance work</h3>
+  <div class="intro_portfolio">
+    <h5><b>I do</b> <span class="badge badge-pill badge-secondary">Web Development</span> <span class="badge badge-pill badge-dark">Data Science/Engineering</span></h5>
+    <h5><b>I work with</b> <span class="badge badge-info">Python</span> <span class="badge badge-info">Node.js</span> <span class="badge badge-info">Clojure</span> <span class="badge badge-light">Clojurescript</span> <span class="badge badge-light">JQuery</span> <span class="badge badge-light">React</span>/<span class="badge badge-light">Re-Frame</span> <span class="badge badge-light">HTML</span> <span class="badge badge-light">CSS</span> <span class="badge badge-primary">Databases</span> <span class="badge badge-primary">APIs</span> <span class="badge badge-primary">AWS</span> <span class="badge badge-primary">git</span>
+  </div>
+  <div class="hire_me"><h4><a href = "mailto: hello@elle-est-au-nord.com">Get in touch</a></h4></div>
+  <div class="projects">
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Full-stack developer</span> @ HOTOSM</h5>
+	<p><span class="project">MapCampaigner</span> app redesign to improve its usability and add new features.</p>
+        <h6><b><a class="project_link" href="https://github.com/hotosm/MapCampaigner/" target="_blank">Github repo</a></b></h6>
+        <span class="badge badge-pill badge-secondary">Web Development</span><br>
+        <span class="badge badge-info">Python</span><span class="badge badge-info">Flask</span> <span class="badge badge-light">JQuery</span> <span class="badge badge-light">HTML</span> <span class="badge badge-light">CSS</span> <span class="badge badge-primary">AWS Lambda</span> <span class="badge badge-primary">AWS S3</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+      </div>
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Data Scientist</span> @ Eleven Pte Ltd</h5>
+	<p><span class="project">Proof of concept</span> to extract data from PDF files of bank statement for a startup automating accounting work.</p>
+        <span class="badge badge-pill badge-dark">Data Science/Engineering</span><br>
+        <span class="badge badge-info">Python</span> <span class="badge badge-primary">AWS Textract</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">GitLab</span>
+      </div>
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Developer</span> @ Journalism++</h5>
+	<p><span class="project">Multiple projects</span>: data analysis, HTML templates generation, web scraping, data pipelines, dashboard web app</p>
+        <span class="badge badge-pill badge-secondary">Web Development</span> <span class="badge badge-pill badge-dark">Data Science/Engineering</span><br>
+        <span class="badge badge-info">Python</span><span class="badge badge-info">Pandas</span><span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">Node.js</span> <span class="badge badge-primary">AWS Lambda</span> <span class="badge badge-primary">AWS SQS</span> <span class="badge badge-primary">AWS SNS</span> <span class="badge badge-light">Pug template</span> <span class="badge badge-light">React</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+      </div>
+    </div> 
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">UI Developer</span> @ CamBioScience</h5>
+	<p><span class="project">Network visualisation</span> dashboard to display and edit genes/proteins interactions for a science startup.</p>
+        <span class="badge badge-pill badge-secondary">Web Development</span><br>
+        <span class="badge badge-light">Clojurescript</span> <span class="badge badge-light">React</span><span class="badge badge-light">Re-Frame</span> <span class="badge badge-light">CSS</span> <span class="badge badge-primary">git</span>
+      </div>
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Node.js Developer</span> @ InternetBarOrg</h5>
+	<p><span class="project">ProTechMe</span> app to get chatbot conversations, convert them to a PDF document and email it to the relevant authority as part of the TechForJustice project.</p>
+	<h6><b><a class="project_link" href="https://github.com/TechForJustice/protechmepdfconversion" target="_blank">Github repo</a></b></h6>
+        <span class="badge badge-pill badge-secondary">Web Development</span><br>
+        <span class="badge badge-info">Node.js</span> <span class="badge badge-info">Motion.ai chatbot</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+      </div>
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Python Instructor</span> @ Journalism++</h5>
+	<p><span class="project">Python course for journalists</span> instructor to support the main teacher with course material, teaching and students support.</p>
+	<span class="badge badge-info">Python</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Personal projects</h3>
+  <h5>I explore <b>data analysis</b> and <b>data visualisation</b> tools.</h5>
   <div class="projects">
     <div class="project_wrapper">
       <div class="project_info">
-	<h4><b>Client project</b></h4>
-	<p><span class="project">Proof of concept</span> to extract text from PDF files <span class="tech">Python, Amazon Web Services (AWS Textract)</span></p>
-      </div>
-      <img alt="Python script screenshot" src="static/img/projects/textract_poc.png">
-    </div>
-    <div class="project_wrapper">
-      <div class="project_info">
-	<h4><b>Personal project</b></h4>
-	<p><span class="project">Jupyter dashboard</span> looking at life expecancy data from Gapminder.org with <span class="tech">Pandas, Altair</span> and <span class="tech">interactive widgets</span>.</p>
-	<p><a href="https://github.com/Eleonore9/tour_dataviz_python/blob/master/code_examples/Gapminder_example.ipynb" target="_blank"><span class="badge badge-secondary">Github repo</span></a></p>
+	<h5><span class="work_title">Notebook dashboard</span></h5>
+	<p><span class="project">Jupyter dashboard</span> looking at life expectancy data from the Gapminder project.</p>
+	<h6><b><a class="project_link" href="https://github.com/Eleonore9/tour_dataviz_python/blob/master/code_examples/Gapminder_example.ipynb" target="_blank">Github repo</a></b></h6>
+        <span class="badge badge-info">Python</span> <span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">Pandas</span> <span class="badge badge-info">Altair</span> <span class="badge badge-info">Jupyter widgets</span>
       </div>
       <img alt="Jupyter dashboard view" src="static/img/projects/gapminder_dashboard.png">
     </div>
     <div class="project_wrapper">
       <div class="project_info">
-	<h4><b>Personal project</b></h4>
-	<p><span class="project">Text Analysis</span> aims at comparing texts content in letters in different languages using <span class="tech">Python</span> and <span class="tech">Pandas</span> in a <span class="tech">Jupyter notebook</span></p>
-	<p><a href="https://github.com/Eleonore9/text_analysis" target="_blank"><span class="badge badge-secondary">Github repo</span></a></p>
-      </div>
-      <img alt="notebook screenshot" src="static/img/projects/text_analysis.png">
-    </div>
-    <div class="project_wrapper">
-      <div class="project_info">
-	<h4><b>Client project</b></h4>
-	<p><span class="project">ProTechMe</span> <span class="tech">Nodejs</span> app gets chatbot conversations and convert them to a PDF document to help people obtain a restraining order.</p>
-	<p><a href="https://github.com/TechForJustice/protechmepdfconversion" target="_blank"><span class="badge badge-secondary">Github repo</span></a></p>
-      </div>
-      <img alt="Documentation screenshot" src="static/img/projects/pdf-conversion.png">
-    </div>
-    <div class="project_wrapper">
-      <div class="project_info">
-	<h4><b>Conference talk</b></h4>
-	<p><span class="project">Telling stories with data</span> (PyCon Sweden 2017) explores rapid data viz using Altair, a <span class="tech">Python</span> API for <span class="tech">Vega</span><br/>
-	<a href="https://eleonore9.github.io/ebola_outbreaks/" target="_blank"> <span class="badge badge-secondary">Ebola data viz</span> </a>and <a href="https://github.com/Eleonore9/pyconse17/blob/master/slides-ele-pyconse17.pdf" target="_blank"><span class="badge badge-secondary">talk slides</span></a></p>
+	<h5><span class="work_title">Data viz with Altair</span></h5>
+	<p><span class="project">Telling stories with data</span> presented at PyCon Sweden 2017 as my experience trying Altair (Python API for Vega) for rapid, shareable data viz.</p>
+        <h6><b><a class="project_link" href="https://eleonore9.github.io/ebola_outbreaks/" target="_blank">Ebola data viz</a></b>, <b><a class="project_link" href="https://github.com/Eleonore9/pyconse17/blob/master/slides-ele-pyconse17.pdf" target="_blank">talk slides</a></b></h6>
+        <span class="badge badge-info">Python</span> <span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">Altair</span>
       </div>
       <img alt="Ebola dataset data viz screenshot" src="static/img/projects/stories-with-data.png">
     </div>
     <div class="project_wrapper">
       <div class="project_info">
-	<h4><b>Conference talk</b></h4>
-	<p><span class="project">Get meaning from scientific articles</span> (PyData London + PyCon UK 2015) uses <span class="tech">Python</span> libraries <span class="tech">Gensim</span> and <span class="tech">Scikit-learn</span> to classify articles from their content.</p>
-	<p><a href="https://github.com/Eleonore9/get-articles-meaning" target="_blank"><span class="badge badge-secondary">Github repo</span></a> and <a href="https://nbviewer.jupyter.org/format/slides/github/Eleonore9/get-articles-meaning/blob/master/notebooks/Eleonore_PyCon_UK2015.ipynb#/" target="_blank"><span class="badge badge-secondary">talk slides</span></a></p>
+	<h5><span class="work_title">Topic modeling (NLP) for bibliography</span></h5>
+	<p><span class="project">Get meaning from scientific articles</span> presented at PyData London 2015 and PyCon UK 2015 uses a naive Bayes classifier to classify articles from their text content.</p>
+	<h6><b><a class="project_link" href="https://github.com/Eleonore9/get-articles-meaning" target="_blank">Github repo</a></b>, <b><a class="project_link" href="https://nbviewer.jupyter.org/format/slides/github/Eleonore9/get-articles-meaning/blob/master/notebooks/Eleonore_PyCon_UK2015.ipynb#/" target="_blank">talk slides</a></b></h6>
+        <span class="badge badge-info">Python</span> <span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">NLTK</span> <span class="badge badge-info">Gensim</span> <span class="badge badge-info">Scikit-learn</span>
       </div>
       <img alt="Jupyter notebook screenshot" src="static/img/projects/articles-meaning.png">
     </div>

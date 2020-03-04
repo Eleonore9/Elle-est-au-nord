@@ -65,105 +65,6 @@
     text-shadow: .5px .5px .7px grey, 0 0 .1em white;
 }
 
-/* BIZ page */
-#hireme {
-    margin-top: -2%;
-}
-
-#hireme h3 {
-    font-weight: bold;
-}
-#hireme .biz-intro a {
-    background-color: rgba(22, 160, 133, 0.7);
-}
-#hireme .biz-intro a:hover {
-    color: #d8d6d6;
-}
-
-#hireme .biz-intro .tooltip {
-    position: relative;
-    display: inline-block;
-    opacity: 1;
-    margin-bottom: .5rem;
-    font-family: inherit;
-    font-size: 28px;
-    font-weight: bold;
-}
-#hireme .biz-intro .tooltip .tooltiptext {
-    visibility: hidden;
-    font-size: 14px;
-    width: 120px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 4px;
-    position: absolute;
-    z-index: 1;
-    width: 180%;
-    bottom: 130%;
-    left: 45%;
-    margin-left: -60px;
-}
-#hireme .biz-intro .tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-#hireme .card-header h4 button {
-    color: white;
-    text-decoration: none;
-    font-family: monospace;
-    font-weight: bold;
-    cursor:pointer;
-}
-#hireme .card-header h4 button:hover {
-    color: #d8d6d6;
-}
-
-#hireme .card-header.web {
-    background-color: rgba(41, 128, 185, 0.5);
-}
-
-#hireme .card-header.data {
-    background-color: rgba(51, 102, 204, 0.5);
-}
-
-#hireme .card-body {
-    background-color: rgba(114, 159, 207, 0.4);
-    color: black;
-    text-align: left;
-}
-
-#hireme .card-body h5 {
-    font-family: monospace;
-    font-weight: bold;
-}
-
-#hireme .card-body a {
-    font-weight: bold;
-    color: #333;
-}
-#hireme .card-body a:hover {
-    color: white;
-}
-#hireme .card-body .project {
-    font-weight: bold;
-    color: #16a085;
-}
-#hireme .card-body .client {
-    font-weight: bold;
-    color: #3366cc;
-}
-
-#hireme .biz-intro {
-    background-color: rgba(114, 159, 207, 0.7);
-    padding: 1%;
-    border-radius: 4px;
-}
-
-#hireme .services {
-    padding: 1%;
-}
 
 /* PROJECTS page */
 #portfolio {
@@ -175,16 +76,34 @@
     font-weight: bold;
 }
 
+.intro_portfolio {
+    float: left;
+}
+
+.hire_me {
+    background-color: rgba(255, 255, 255, .75);
+    width: 80px;
+    text-align: right;
+    float: right;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: #2980b9 0px 0px 0px, #2980b9 -1px 1px 0px, #2980b9 -2px 2px 0px, #2980b9 -3px 3px 0px, #3366cc -4px 4px 0px, #3366cc -5px 5px 0px, #3366cc -6px 6px 0px;
+}
+.hire_me:hover {
+    text-shadow: #16a085 0px 0px 0px, #16a085 0px 1px 0px, #16a085 0px 2px 0px, #16a085 -1px 3px 0px, #3366cc -2px 4px 0px, #3366cc -3px 5px 0px, #3366cc -4px 6px 0px;
+}
+
 .projects {
-    margin-top: 4%;
-    padding: 2%;
+    clear: both;
+    margin: 2% 0;
+    padding: 1%;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly;
     max-width: 100%;
     height: 100%;
-    background-color: rgba(114, 159, 207, 0.6);
+    background-color: rgba(114, 159, 207, .6);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -197,27 +116,63 @@
     margin: 1%;
 }
 
+.project_wrapper.color_bg {
+    height: 250px;
+}
+
+.project_wrapper:nth-child(1n) {
+    background-color: rgba(114, 159, 207, .9);
+}
+.project_wrapper:nth-child(2n) {
+    background-color: rgba(41, 128, 185, .75);
+}
+.project_wrapper:nth-child(3) {
+    background-color: rgba(22, 160, 133, .75);
+}
+.project_wrapper:nth-child(4n) {
+    background-color: rgba(51, 102, 204, .75);
+}
+
+.project_link {
+    color: rgb(22, 160, 133);
+} 
+.project_link:hover {
+    color: rgb(22, 160, 133);
+    text-decoration: underline rgb(22, 160, 133);
+}
+
 .projects img {
     max-width: 90%;
     position: relative;
 }
 
 .project_info {
-    padding: 1%;
+    padding: 2.5%;
     position: absolute;
-    /*margin: 5% 0 0 5%;*/
-    width: 90%;
+    width: 100%;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, .7);
+}
+.project_wrapper.color_bg .project_info {
+    background: rgba(0, 0, 0, .4);
 }
 
 .project_info .tech {
-https://mayli-jewels.com/product/labradorite-fancy/    color: #16a085;
+    color: #16a085;
     font-weight: bold;
 }
 
 .project_info .project {
     color: #2980b9;
+    font-weight: bold;
+}
+
+.project_info p {
+    font-size: medium;
+}
+
+.work_title {
+    font-family: monospace;
     font-weight: bold;
 }
 
