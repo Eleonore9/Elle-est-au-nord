@@ -76,7 +76,25 @@
     font-weight: bold;
 }
 
+.intro_portfolio {
+    float: left;
+}
+
+.hire_me {
+    background-color: rgba(255, 255, 255, .75);
+    width: 80px;
+    text-align: right;
+    float: right;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: #2980b9 0px 0px 0px, #2980b9 -1px 1px 0px, #2980b9 -2px 2px 0px, #2980b9 -3px 3px 0px, #3366cc -4px 4px 0px, #3366cc -5px 5px 0px, #3366cc -6px 6px 0px;
+}
+.hire_me:hover {
+    text-shadow: #16a085 0px 0px 0px, #16a085 0px 1px 0px, #16a085 0px 2px 0px, #16a085 -1px 3px 0px, #3366cc -2px 4px 0px, #3366cc -3px 5px 0px, #3366cc -4px 6px 0px;
+}
+
 .projects {
+    clear: both;
     margin: 2% 0;
     padding: 1%;
     display: flex;
@@ -151,6 +169,11 @@
 
 .project_info p {
     font-size: medium;
+}
+
+.work_title {
+    font-family: monospace;
+    font-weight: bold;
 }
 
 /* ABOUT ME page */
