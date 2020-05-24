@@ -16,18 +16,27 @@ app.config.update(
 def index():
 	return render_template("index.html")
 
-@app.route("/hireme", methods=["GET"])
-def hireme():
-        return render_template("hireme.html")
-
 @app.route("/aboutme", methods=["GET"])
 def aboutme():
 	return render_template("aboutme.html")
 
-@app.route("/projects", methods=["GET"])
-def projects():
+@app.route("/portfolio", methods=["GET"])
+def portfolio():
+	return render_template("portfolio.html")
+
+@app.route("/tech", methods=["GET"])
+def tech():
 	return render_template("projects.html")
 
+@app.route("/techart", methods=["GET"])
+def techart():
+	return render_template("dataviz.html")
+
+@app.route("/art", methods=["GET"])
+def art():
+	return render_template("art-projects.html")
+
+
 if __name__ == "__main__":
-	#port = int(os.environ.get("PORT", 5000))
+	port = int(os.environ.get("PORT", 5000))
 	app.run(host='0.0.0.0', port=port)
