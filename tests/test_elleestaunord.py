@@ -18,5 +18,5 @@ def test_my_app(app):
 def test_route(client):
     assert client.get(url_for('index')).status_code == 200
     assert client.get(url_for('aboutme')).status_code == 200
-    assert client.get(url_for('projects')).status_code == 200
+    assert client.get(url_for('portfolio')).status_code == 200
     assert client.get('/foo').status_code == 404
