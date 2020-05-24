@@ -20,19 +20,19 @@ def index():
 def aboutme():
 	return render_template("aboutme.html")
 
-@app.route("/projects", methods=["GET"])
-def projects():
+@app.route("/portfolio", methods=["GET"])
+def portfolio():
+	return render_template("portfolio.html")
+
+@app.route("/tech", methods=["GET"])
+def tech():
 	return render_template("projects.html")
 
-@app.route("/projects/tech", methods=["GET"])
-def tech_projects():
-	return render_template("tech-projects.html")
-
-@app.route("/projects/dataviz", methods=["GET"])
-def dataviz():
+@app.route("/techart", methods=["GET"])
+def techart():
 	return render_template("dataviz.html")
 
-@app.route("/projects/art", methods=["GET"])
+@app.route("/art", methods=["GET"])
 def art():
 	return render_template("art-projects.html")
 
