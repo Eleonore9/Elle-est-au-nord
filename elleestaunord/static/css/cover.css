@@ -46,8 +46,7 @@ body {
  */
 
 nav {
-    /*margin-top: -7%;*/
-    font-family: monospace; !important
+    font-family: monospace;
 }
 
 .nav {
@@ -60,14 +59,6 @@ nav {
     margin-bottom: 25%;
     text-align: left;
     white-space: nowrap;
-}
-
-.link-blog a {
-    color: #16a085 !important;
-}
-
-.link-biz a {
-    color: #3366cc !important;
 }
 
 .nav > li > a {
@@ -119,4 +110,3 @@ nav {
    margin-top: 3%;
    margin-left: 40%;
 }
-

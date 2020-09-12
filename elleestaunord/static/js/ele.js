@@ -6,23 +6,19 @@ $( document ).ready(function() {
   if(path=="/"){
     $('.nav li.link-portfolio').removeClass('active');
     $('.nav li.link-aboutme').removeClass('active');
-    $('.nav li.link-biz').removeClass('active');
     $('.nav li.link-home').addClass('active');
   } else if(path=="/projects"){
     $('.nav li.link-home').removeClass('active');
     $('.nav li.link-aboutme').removeClass('active');
-    $('.nav li.link-biz').removeClass('active');
     $('.nav li.link-portfolio').addClass('active');
   } else if(path=="/aboutme"){
     $('.nav li.link-portfolio').removeClass('active');
     $('.nav li.link-home').removeClass('active');
-    $('.nav li.link-biz').removeClass('active');
     $('.nav li.link-aboutme').addClass('active');
   } else if(path=="/hireme"){
     $('.nav li.link-portfolio').removeClass('active');
     $('.nav li.link-home').removeClass('active');
     $('.nav li.link-aboutme').removeClass('active');
-    $('.nav li.link-biz').addClass('active');
   }
 
 });
