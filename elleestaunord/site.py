@@ -1,4 +1,3 @@
-#!/env/bin/python3.8
 import os, sys
 from flask import Flask, render_template
 

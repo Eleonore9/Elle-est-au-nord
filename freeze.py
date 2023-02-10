@@ -1,4 +1,3 @@
-#!/env/bin/python3.8
 import os
 from flask_frozen import Freezer
 from elleestaunord.site import app
