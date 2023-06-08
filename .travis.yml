@@ -1,15 +1,7 @@
 language: python
 python:
-  - "2.7"
-  - "3.4"
+  - "3.8"
 install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
 script: py.test
-deploy:
-  provider: heroku
-  api_key:
-    secure: RxZ2UpdeSekzNbhxXHHWV/bfhXSMEUoy6lZBOUVmuc17MvtQB0U9Fv5jntz2/Nc1TqU0jti3DGjT3KeP2BSv+HkFqhBsR2EYoaSBmrKUUpKr88kXwbno9pi3C9qGmhEsw9awpkGCJIcPLmiT4GffkdktdAfUg0bFFkAfg+eTIN0xFG43Zr0YEU8I8b7pAKm73U3kyTU2gj9kJsIJ0cQ5N9X7F5gta1a7rFX6WqAVeoBDwJd85RFkAS04+OapmscyhqEOyzclCiVb2fSuhDLdpuvjWNkFKwBcI8rlDJcHhywoJYxYiTFb8SMfIRcZQAZisoreJoYBsdOslJVd50r9ZJa9kd94xkuCSGX80Cn4INkGc1yxpbq8cfODHF0Xua0YuaRNy9zaYHgyrRbJvJPEMlJiEhsS3sQev/pSDoUCEodl323VIMYdLGU3YKgqj0Kv6RHDnxKi/NMBTlHmUGKPBjK9H/SgdQK1n6jLD1gRKh+YMdLXUyMemKYrLmNeO7ahDCMbwq8WjMrM18cFu2YI0ZPXc30C+qra3RLXem2gqULQP0uRC5i+0Itsa9HH4RawDVO3zWyb/T3z1LwjHA2kxhwlXRqrV8hhOiAs4LTzwFBGW2cRHazmuCcPykC/Cc2FZXO0UP2Hrz8/sEKLZp3AVNz5zw+IWR6+ZuKCzALX4AY=
-  app:
-    master: elle-est-au-nord-staging
-    production: elle-est-au-nord
