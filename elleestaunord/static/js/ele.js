@@ -3,22 +3,18 @@ $( document ).ready(function() {
 
   var path = window.location.pathname;
 
-  if(path=="/"){
+  if(path == "/"){
     $('.nav li.link-portfolio').removeClass('active');
     $('.nav li.link-aboutme').removeClass('active');
     $('.nav li.link-home').addClass('active');
-  } else if(path=="/projects"){
+  } else if(path == "/projects/"){
     $('.nav li.link-home').removeClass('active');
     $('.nav li.link-aboutme').removeClass('active');
     $('.nav li.link-portfolio').addClass('active');
-  } else if(path=="/aboutme"){
+  } else if(path == "/aboutme/"){
     $('.nav li.link-portfolio').removeClass('active');
     $('.nav li.link-home').removeClass('active');
     $('.nav li.link-aboutme').addClass('active');
-  } else if(path=="/hireme"){
-    $('.nav li.link-portfolio').removeClass('active');
-    $('.nav li.link-home').removeClass('active');
-    $('.nav li.link-aboutme').removeClass('active');
   }
 
 });

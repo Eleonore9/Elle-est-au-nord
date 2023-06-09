@@ -80,6 +80,7 @@ nav {
 .nav > .active > a,
 .nav > .active > a:hover,
 .nav > .active > a:focus {
+  background-color: rgba(0, 0, 0, .1);
   color: #fff;
   border-left-color: #fff;
 }
