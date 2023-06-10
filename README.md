@@ -3,5 +3,5 @@
 
 Find my website at <https://Elle-est-au-nord.com>.
 
-### Personal website redesign
-![screenshotEleonore](elleestaunord/static/img/elle-est-au-nord.png)
+### Personal website (re)design
+![screenshotEleonore](elleestaunord/static/img/eean-readme-landscape.png)
