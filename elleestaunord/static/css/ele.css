@@ -166,8 +166,15 @@
     z-index: 10;
     background: rgba(0, 0, 0, .6);
 }
+.project_info:hover {
+    background: rgba(0, 0, 0, .3);
+}
+
 .project_wrapper.color_bg .project_info {
     background: rgba(0, 0, 0, .6);
+}
+.project_wrapper.color_bg .project_info:hover {
+    background: rgba(0, 0, 0, .3);
 }
 
 .project_info .tech {
