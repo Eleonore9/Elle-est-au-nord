@@ -15,6 +15,13 @@ $( document ).ready(function() {
     $('.nav li.link-portfolio').removeClass('active');
     $('.nav li.link-home').removeClass('active');
     $('.nav li.link-aboutme').addClass('active');
-  }
+  };
+
+  $(".intro_client_work").click(function () {
+    $(".projects.client").toggle();
+  });
+  $(".intro_personal_work").click(function () {
+    $(".projects.perso").toggle();
+  });
 
 });
