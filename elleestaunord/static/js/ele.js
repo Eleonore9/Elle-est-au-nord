@@ -18,10 +18,10 @@ $( document ).ready(function() {
   };
 
   $(".intro_client_work").click(function () {
-    $(".projects.client").toggle();
+    $(".client-projects-container").toggle();
   });
   $(".intro_personal_work").click(function () {
-    $(".projects.perso").toggle();
+    $(".perso-projects-container").toggle();
   });
 
 });

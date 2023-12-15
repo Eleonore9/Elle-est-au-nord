@@ -1,3 +1,4 @@
+
 {% extends "layout.html" %}
 {% block body %}
 
@@ -5,22 +6,47 @@
 <div id="portfolio">
   <h3>Freelance experience</h3>
   <div class="intro_portfolio">
-    <h5><b>I do</b> <span class="badge badge-pill badge-secondary">Web Development</span> <span class="badge badge-pill badge-dark">Data Science/Engineering</span></h5>
-    <h5><b>I've worked with</b> <span class="badge badge-info">Python</span> <span class="badge badge-info">Node.js</span> <span class="badge badge-info">Clojure</span> <span class="badge badge-light">Clojurescript</span> <span class="badge badge-light">JQuery</span> <span class="badge badge-light">React</span> <span class="badge badge-light">HTML</span> <span class="badge badge-light">CSS</span> <span class="badge badge-primary">(No)SQL</span> <span class="badge badge-primary">APIs</span> <span class="badge badge-primary">AWS</span> <span class="badge badge-primary">GCloud</span> <span class="badge badge-primary">git</span>
+    <h5><b><span class="badge badge-pill badge-secondary">Web Development</span> <span class="badge badge-pill badge-dark">Data Science/Engineering</span> experience with</b> <span class="badge badge-info">Python</span> <span class="badge badge-info">Node.js</span> <span class="badge badge-info">Rust</span> <span class="badge badge-info">Clj</span> <span class="badge badge-light">Cljs</span> <span class="badge badge-light">JQuery</span> <span class="badge badge-light">React</span> <span class="badge badge-light">HTML</span> <span class="badge badge-light">CSS</span> <span class="badge badge-primary">(No)SQL</span> <span class="badge badge-primary">APIs</span> <span class="badge badge-primary">AWS</span> <span class="badge badge-primary">GCloud</span> <span class="badge badge-primary">git</span>
   </div>
   <!--<div class="hire_me"><h4><a href = "mailto: ">Get in touch</a></h4></div>-->
   <div class="intro_client_work" type="button">
     <h5>↕ FORMER CLIENT PROJECTS</h5>
   </div>
-  <div class="projects client" style="display:none">
+  <div class="client-projects-container" style="display:none">
+  <div class="projects client">
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Developer</span> @ OpenSanctions</h5>
+	<p><span class="project">Update authentification service</span> and document the process.
+        </p>
+        <span class="badge badge-pill badge-secondary">Web Development</span><br>
+        <span class="badge badge-info">React</span><span class="badge badge-info">Nextjs</span> <span class="badge badge-info">AuthJS</span> <span class="badge badge-light">TS</span> <span class="badge badge-primary">Auth0</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+      </div>
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Digital Developer</span> @ Octophin digital</h5>
+	<p><span class="project">Multiple projects</span>: ETL, improve data pipeline, add feature to website, pair programming.</p>
+        <span class="badge badge-pill badge-dark">Data Science/Engineering</span><span class="badge badge-pill badge-secondary">Web Development</span><br>
+        <span class="badge badge-info">Python</span><span class="badge badge-info">Flask</span> <span class="badge badge-info">PHP</span> <span class="badge badge-light">JS</span> <span class="badge badge-primary">Postgres</span> <span class="badge badge-primary">Docker</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+      </div>
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="project_info">
+	<h5><span class="work_title">Full-stack developer</span> @ Repositive.io</h5>
+	<p><span class="project">Add features</span> to web platform for researchers to discover cancer models.</p>
+        <span class="badge badge-pill badge-secondary">Web Development</span><br>
+        <span class="badge badge-info">Rust</span> <span class="badge badge-light">React</span> <span class="badge badge-light">TS</span> <span class="badge badge-light">SCSS</span> <span class="badge badge-primary">Postgres</span> <span class="badge badge-primary">GCloud</span> <span class="badge badge-primary">Kubernetes</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+      </div>
+    </div>
     <div class="project_wrapper color_bg">
       <div class="project_info">
 	<h5><span class="work_title">Full-stack developer</span> @ HOTOSM</h5>
-	<p><span class="project">MapCampaigner</span> app redesign to improve usability & add features.</br>
+	<p><span class="project">App redesign</span> to improve usability & add features.</br>
          <a class="project_link" href="https://github.com/hotosm/MapCampaigner/" target="_blank" rel="noopener noreferrer"><b>Github repo</b></a>
         </p>
         <span class="badge badge-pill badge-secondary">Web Development</span><br>
-        <span class="badge badge-info">Python</span><span class="badge badge-info">Flask</span> <span class="badge badge-light">JQuery</span> <span class="badge badge-light">HTML</span> <span class="badge badge-light">CSS</span> <span class="badge badge-primary">AWS Lambda</span> <span class="badge badge-primary">AWS S3</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
+        <span class="badge badge-info">Python</span><span class="badge badge-info">Flask</span> <span class="badge badge-light">JQuery</span> <span class="badge badge-light">HTML</span> <span class="badge badge-light">SASS</span> <span class="badge badge-primary">AWS Lambda</span> <span class="badge badge-primary">AWS S3</span> <span class="badge badge-primary">git</span><span class="badge badge-primary">Github</span>
       </div>
     </div>
     <div class="project_wrapper color_bg">
@@ -65,6 +91,7 @@
       </div>
     </div>
   </div>
+  </div>
 
   <h3>Other projects</h3>
   <div class="intro_pp">
@@ -73,35 +100,117 @@
   <div class="intro_personal_work" type="button">
     <h5>↕ PERSONAL PROJECTS</h5>
   </div>
-  <div class="projects perso" style="display:none">
+  <div class="perso-projects-container">
+  <div class="projects perso">
     <div class="project_wrapper color_bg">
-      <div class="project_info">
-	<h5><span class="work_title">Notebook dashboard</span></h5>
-	<p><span class="project">Jupyter dashboard</span> looking at life expectancy data from the Gapminder project.</p>
-	<h6><b><a class="project_link" href="https://github.com/Eleonore9/tour_dataviz_python/blob/master/code_examples/Gapminder_example.ipynb" target="_blank" rel="noopener noreferrer">Github repo</a></b></h6>
-        <span class="badge badge-info">Python</span> <span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">Pandas</span> <span class="badge badge-info">Altair</span> <span class="badge badge-info">Jupyter widgets</span>
-      </div>
-      <img alt="Jupyter dashboard view" src="/static/img/projects/gapminder_dashboard.png">
+      <div class="column_left">
+        <div class="project_info">
+	  <h5><span class="work_title">Data exploration</span></h5>
+        </div>
+        <div class="project_list">
+          <p><a class="project_link" href="https://elle-est-au-nord.github.io/explore-datasets/land_defenders/land-defenders.html" target="_blank">
+              Land defenders</a></p>
+          <p><a class="project_link" href="https://github.com/Eleonore9/text_analysis" target="_blank">
+              Text analysis</a></p>
+          <p><a class="project_link" href="http://blog.elle-est-au-nord.com/ebola_outbreaks/" target="_blank">
+              Ebola outbreaks before 2014</a></p>
+        </div>
+      </div> <!-- column left -->
+      <div class="column_right">
+        <img alt="Land defenders victms leaflet map" src="/static/img/projects/land-defenders-leaflet-map.jpg" style="height: 40%;">
+        <img alt="Ebola dataset data viz screenshot" src="/static/img/projects/stories-with-data.jpg" style="height: 60%;">
+      </div> <!-- column right -->
     </div>
     <div class="project_wrapper color_bg">
-      <div class="project_info">
-	<h5><span class="work_title">Data viz with Altair</span></h5>
-	<p><span class="project">Telling stories with data</span> presented at PyCon Sweden 2017 as my experience trying Altair (Python API for Vega) for rapid, shareable data viz.</p>
-        <h6><b><a class="project_link" href="https://eleonore9.github.io/ebola_outbreaks/" target="_blank" rel="noopener noreferrer">Ebola data viz</a></b>, <b><a class="project_link" href="https://github.com/Eleonore9/pyconse17/blob/master/slides-ele-pyconse17.pdf" target="_blank" rel="noopener noreferrer">talk slides</a></b></h6>
-        <span class="badge badge-info">Python</span> <span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">Altair</span>
-      </div>
-      <img alt="Ebola dataset data viz screenshot" src="/static/img/projects/stories-with-data.png">
+      <div class="column_left">
+        <div class="project_info">
+	  <h5><span class="work_title">Data stories</span></h5>
+        </div>
+        <div class="project_list">
+          <p><a class="project_link" href="https://public.flourish.studio/story/2081220/" target="_blank">
+              Lethal attacks on land & environmental defenders</a>
+          </p>
+          <p><a class="project_link" href="https://stories-lavigne.netlify.app/" target="_blank">
+              Letting go of 2000's Avril Lavigne</a>
+          </p>
+        </div>
+      </div> <!-- column left -->
+      <div class="column_right">
+        <img alt="Attacks on land defenders screenshot" src="/static/img/projects/land-defenders-story.jpg" style="height: 60%;">
+        <img alt="Letting go of 2000's A. Lavigne story screenshot" src="/static/img/projects/avril-lavigne-story.jpg" style="height: 40%;">
+      </div> <!-- column right -->
     </div>
     <div class="project_wrapper color_bg">
-      <div class="project_info">
-	<h5><span class="work_title">Topic modeling (NLP) for bibliography</span></h5>
-	<p><span class="project">Get meaning from scientific articles</span> presented at PyData London 2015 and PyCon UK 2015 uses a naive Bayes classifier to classify articles from their text content.</p>
-	<h6><b><a class="project_link" href="https://github.com/Eleonore9/get-articles-meaning" target="_blank" rel="noopener noreferrer">Github repo</a></b>, <b><a class="project_link" href="https://nbviewer.jupyter.org/format/slides/github/Eleonore9/get-articles-meaning/blob/master/notebooks/Eleonore_PyCon_UK2015.ipynb#/" target="_blank" rel="noopener noreferrer">talk slides</a></b></h6>
-        <span class="badge badge-info">Python</span> <span class="badge badge-info">Jupyter notebook</span> <span class="badge badge-info">NLTK</span> <span class="badge badge-info">Gensim</span> <span class="badge badge-info">Scikit-learn</span>
-      </div>
-      <img alt="Jupyter notebook screenshot" src="/static/img/projects/articles-meaning.png">
+      <div class="column_left">
+        <div class="project_info">
+	  <h5><span class="work_title">Tech talks</span></h5>
+        </div>
+        <div class="project_list">
+          <p><a class="project_link" href="https://github.com/Eleonore9/tour_dataviz_python" target="_blank">
+              A tour of data viz in Python</a></p>
+          <p><a class="project_link" href="https://github.com/Eleonore9/pyconse18/blob/master/pyconse2018.pdf" target="_blank">
+              A developer amongst (data) journalists</a></p>
+          <p><a class="project_link" href="https://github.com/Eleonore9/get-articles-meaning" target="_blank">
+              Getting meaning from scientific articles</a></p>
+        </div>
+      </div> <!-- column left -->
+      <div class="column_right">
+        <img alt="A tour of data viz in Python screenshot" src="/static/img/projects/talk-dataviz-python.jpg" style="height: 50%;">
+        <img alt="Getting meaning from scientific articles screenshot" src="/static/img/projects/talk-articles-meaning.jpg" style="height: 50%;">
+      </div> <!-- column right -->
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="column_left">
+        <div class="project_info">
+	  <h5><span class="work_title">Viz experiments</span></h5>
+        </div>
+        <div class="project_list">
+          <p><a class="project_link" href="https://elle-est-au-nord.github.io/abc/" target="_blank">
+              p5.js viz</a></p>
+          <p><a class="project_link" href="https://elle-est-au-nord.github.io/creative-dataviz/" target="_blank">
+              painting viz</a></p>
+        </div>
+      </div> <!-- column left -->
+      <div class="column_right">
+        <img alt="P5.js data viz projects" src="/static/img/projects/p5js-viz.png" style="height: 50%;">
+        <img alt="Data viz painting project screenshot" src="/static/img/projects/creative-dataviz.jpg" style="height: 50%;">
+      </div> <!-- column right -->
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="column_left">
+        <div class="project_info">
+	  <h5><span class="work_title">Zines</span></h5>
+        </div>
+        <div class="project_list">
+          <p><a class="project_link" href="https://github.com/Eleonore9/tour_dataviz_python/blob/master/dataviz_minizine.pdf" target="_blank">
+              A tour of data viz in Python</a></p>
+          <p>Data Viz is magic</p>
+          <p>Hej Stockholm</p>
+        </div>
+      </div> <!-- column left -->
+      <div class="column_right">
+        <img alt="A pic of my zines at MozFest 2018" src="/static/img/projects/zines-at-mozfest.jpg" style="height: 50%;">
+        <img alt="Data viz is magic zine screenshot" src="/static/img/projects/dataviz-zine-crop.jpg" style="height: 50%;">
+      </div> <!-- column right -->
+    </div>
+    <div class="project_wrapper color_bg">
+      <div class="column_left">
+        <div class="project_info">
+	  <h5><span class="work_title">Visual arts</span></h5>
+        </div>
+        <div class="project_list">
+          <p>Creative coding</p>
+          <p>Digital collage</p>
+          <p>Mixed media illustration</p>
+        </div>
+      </div> <!-- column left -->
+      <div class="column_right">
+        <img alt="Collage of creative coding and artsy animations" src="/static/img/projects/coding-and-art-animations-collage.gif" style="height: 50%;">
+        <img alt="Collage of digital art by me" src="/static/img/projects/illustrations-and-creative-coding.jpg" style="height: 50%;">
+      </div> <!-- column right -->
     </div>
   </div>
+ </div>
 </div>
 
 {% endblock %}
