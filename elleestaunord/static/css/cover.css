@@ -92,6 +92,7 @@ nav {
 .cover {
     margin: 2% 0 0 5%;
     z-index: 2;
+    overflow: hidden;
 }
 .cover .btn-lg {
   padding: 10px 20px;

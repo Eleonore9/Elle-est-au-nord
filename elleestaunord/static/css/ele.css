@@ -1,6 +1,6 @@
 /* Background */
 .site-wrapper {
-    overflow: auto;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -13,6 +13,7 @@
 .site-body {
     flex: 1;
 }
+
 
 #map {
     position:absolute;
@@ -73,37 +74,24 @@
 
 
 /* PROJECTS page */
-#portfolio {
+.portfolio {
     display: inline;
 }
 
-#portfolio h3 {
+.portfolio h3 {
     text-align: center;
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 }
 
 .intro_portfolio {
     background-color: rgba(0, 0, 0, .1);
-    padding: 1%;
-}
-
-.hire_me {
-    background-color: rgba(255, 255, 255, .75);
-    width: 80px;
-    text-align: right;
-    float: right;
-    font-family: monospace;
-    font-weight: bold;
-    text-shadow: #2980b9 0px 0px 0px, #2980b9 -1px 1px 0px, #2980b9 -2px 2px 0px, #2980b9 -3px 3px 0px, #3366cc -4px 4px 0px, #3366cc -5px 5px 0px, #3366cc -6px 6px 0px;
-}
-.hire_me:hover {
-    text-shadow: #16a085 0px 0px 0px, #16a085 0px 1px 0px, #16a085 0px 2px 0px, #16a085 -1px 3px 0px, #3366cc -2px 4px 0px, #3366cc -3px 5px 0px, #3366cc -4px 6px 0px;
+    padding: 1% 1% .5% 1%;
 }
 
 .intro_client_work {
     background: linear-gradient(to bottom right, rgba(41, 128, 185, .5), rgba(22, 160, 133, .5));
-    padding: 1%;
+    padding: 1% 1% .5% 1%;
     font-family: monospace;
     font-weight: bold;
 }
@@ -114,7 +102,7 @@
 
 .intro_personal_work {
     background: linear-gradient(to bottom right, rgba(250, 92, 72, .5), rgba(250, 154, 72, .5));
-    padding: 1%;
+    padding: 1% 1% .5% 1%;
     font-family: monospace;
     font-weight: bold;
 }
@@ -125,13 +113,20 @@
 
 .intro_pp {
     background-color: rgba(0, 0, 0, .1);
-    padding: 1%;
+    padding: 1% 1% .5% 1%;
 }
 
 .client-projects-container {
     width: 100%;
-    height: 25%; /*350px;*/
+    height: 50vh; /*20%;*/
+    margin-bottom: 3%;
+    overflow: scroll;
+}
+.perso-projects-container {
+    width: 100%;
+    height: 50vh; /*30%;*/
     margin-bottom: 1%;
+    overflow: scroll;
 }
 
 .projects {
@@ -142,7 +137,7 @@
     flex-wrap: wrap;
     max-width: 100%;
     max-height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     border-radius: 4px;
 }
 .projects.client {
@@ -160,7 +155,6 @@
 .project_wrapper {
     flex: auto;
     position: relative;
-    /*display: inline-block;*/
     display: flex;
     width: 30%;
     margin: 1%;
@@ -299,17 +293,17 @@
 }
 
 /* ABOUT ME page */
-#about_me {
+.about_me {
     height: 55%;
 }
-#about_me h3 {
+.about_me h3 {
     font-weight: bold;
 }
-#about_me h3 span {
+.about_me h3 span {
     background-color: rgba(22, 160, 133, 0.75);
 }
 
-#about_me .introduction {
+.about_me .introduction {
     margin-top: 8%;
     background-color: rgba(114, 159, 207, 0.8);
     padding: 2%;
@@ -319,42 +313,42 @@
     display: flex;
     flex-wrap: wrap;
 }
-#about_me .intro_photo {
+.about_me .intro_photo {
     flex: auto;
     position: relative;
     display: inline-block;
 }
-#about_me .intro_photo img {
+.about_me .intro_photo img {
     width: 77%;
     opacity: 1;
     border-radius: 4px;
 }
-#about_me .about_content {
+.about_me .about_content {
     display: inline-block;
     margin-top: -42%;
     text-align: justify;
     text-justify: inter-word;
 }
-#about_me .text-content{
+.about_me .text-content{
     flex: auto;
     position: relative;
     display: inline-block;
     margin-top: 7%;
     font-size: 18px;
 }
-#about_me .social_buttons {
+.about_me .social_buttons {
     flex: auto;
     position: relative;
     display: inline-block;
     margin-top: 7.5%;
 }
-#about_me .social_buttons img {
+.about_me .social_buttons img {
     width: 30px;
 }
-#about_me .social_buttons a:hover {
+.about_me .social_buttons a:hover {
     text-decoration: none;
 }
-#about_me .intro_photo span {
+.about_me .intro_photo span {
     text-align: left;
     font-size: 9.5px;
 }
@@ -369,22 +363,22 @@
     nav .navbar-toggler {
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
-    #about_me .intro_photo img {
+    .about_me .intro_photo img {
 	margin-top: 10%;
 	max-width: 180px;
     }
-    #about_me .about_content {
+    .about_me .about_content {
 	text-justify: none;
 	margin-top: 12%;
     }
-    #portfolio .projects {
+    .portfolio .projects {
 	overflow: hidden visible;
     }
-    #portfolio .project_wrapper {
+    .portfolio .project_wrapper {
 	width: 90%;
 	margin-bottom: 15%;
     }
-    #portfolio .project_info {
+    .portfolio .project_info {
 	margin: 0 0 0 5%;
     }
 }
@@ -396,18 +390,18 @@
     nav .navbar-toggler {
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
-    #about_me .intro_photo img {
+    .about_me .intro_photo img {
 	width: 60%;
 	margin: 10% 35% 0 0;
     }
-    #about_me .intro_photo span {
+    .about_me .intro_photo span {
 	margin-right: 35%;
     }
-    #about_me .about_content {
+    .about_me .about_content {
 	text-justify: none;
 	margin-top: 12%;
     }
-    #portfolio .project_wrapper {
+    .portfolio .project_wrapper {
 	width: 60%;
     }
 }
@@ -423,18 +417,18 @@
     nav .navbar-toggler {
 	background-color: rgba(51, 102, 204, 0.5) !important;
     }
-    #about_me .intro_photo img {
+    .about_me .intro_photo img {
 	margin: 10% 33% 0 0;
 	max-width: 200px;
     }
-    #about_me .intro_photo span {
+    .about_me .intro_photo span {
 	margin-right: 34%;
     }
-    #about_me .about_content {
+    .about_me .about_content {
 	text-justify: none;
 	margin-top: 8%;
     }
-    #portfolio .project_wrapper {
+    .portfolio .project_wrapper {
 	min-width: 55%;
     }
 }
@@ -447,14 +441,14 @@
     nav {
         margin-top: 5%;
     }
-    #about_me .intro_photo img {
+    .about_me .intro_photo img {
 	width: 100%;
     }
-    #about_me .about_content {
+    .about_me .about_content {
 	text-justify: none;
 	margin-top: -52.7%
     }
-    #portfolio .project_wrapper {
+    .portfolio .project_wrapper {
 	min-width: 45%;
     }
 }
@@ -464,14 +458,14 @@
     nav {
         margin-top: 5%;
     }
-    #about_me .intro_photo img {
+    .about_me .intro_photo img {
 	width: 100%;
     }
-    #about_me .about_content {
+    .about_me .about_content {
 	text-justify: none;
 	margin-top: -52.7%
     }
-    #portfolio .project_wrapper {
+    .portfolio .project_wrapper {
 	min-width: 35%;
     }
 }
