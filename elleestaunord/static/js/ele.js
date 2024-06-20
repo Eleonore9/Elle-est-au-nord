@@ -17,11 +17,4 @@ $( document ).ready(function() {
     $('.nav li.link-aboutme').addClass('active');
   };
 
-  $(".intro_client_work").click(function () {
-    $(".client-projects-container").toggle();
-  });
-  $(".intro_personal_work").click(function () {
-    $(".perso-projects-container").toggle();
-  });
-
 });
