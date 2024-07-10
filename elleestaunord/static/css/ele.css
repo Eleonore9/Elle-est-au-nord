@@ -85,7 +85,7 @@
 }
 
 .intro_client_work {
-    background: linear-gradient(to bottom right, rgba(41, 128, 185, .4), rgba(22, 160, 133, .4));
+    background: linear-gradient(to bottom right, rgba(41, 128, 185, .5), rgba(22, 160, 133, .5));
     padding: .5% 1% .5% 1%;
 }
 .intro_client_work:hover {
@@ -94,7 +94,7 @@
 
 
 .intro_personal_work {
-    background: linear-gradient(to bottom right, rgba(250, 92, 72, .4), rgba(250, 154, 72, .4));
+    background: linear-gradient(to bottom right, rgba(250, 92, 72, .5), rgba(250, 154, 72, .5));
     padding: 1% 1% .5% 1%;
 }
 .intro_personal_work:hover {
@@ -164,29 +164,29 @@
 }
 
 .client .project_wrapper:nth-child(1n) {
-    background-color: rgba(114, 159, 207, .9);
+    background-color: rgba(114, 159, 207, .8);
 }
 .client .project_wrapper:nth-child(2n) {
-    background-color: rgba(41, 128, 185, .75);
+    background-color: rgba(41, 128, 185, .8);
 }
 .client .project_wrapper:nth-child(3) {
-    background-color: rgba(22, 160, 133, .75);
+    background-color: rgba(22, 160, 133, .8);
 }
 .client .project_wrapper:nth-child(4n) {
-    background-color: rgba(51, 102, 204, .75);
+    background-color: rgba(51, 102, 204, .7);
 }
 
 .perso .project_wrapper:nth-child(1n) {
-    background-color: rgba(165, 120, 103, .9);
+    background-color: rgba(165, 120, 103, .7);
 }
 .perso .project_wrapper:nth-child(2n) {
-    background-color: rgba(250, 92, 72, .5);
+    background-color: rgba(250, 92, 72, .7);
 }
 .perso .project_wrapper:nth-child(3) {
-    background-color: rgba(250, 154, 72, .5);
+    background-color: rgba(250, 154, 72, .7);
 }
 .perso .project_wrapper:nth-child(4n) {
-    background-color: rgba(250, 72, 113, .5);
+    background-color: rgba(250, 72, 113, .7);
 }
 
 .client .project_link {
