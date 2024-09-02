@@ -2,8 +2,21 @@
 {% extends "layout.html" %}
 {% block body %}
 
-
 <div class="portfolio">
+
+  <div class="intro_personal_work">
+    <h3>Dataviz developer</h3>
+  </div>
+  <div class="iframe-container">
+    <iframe
+      class="resp-iframe"
+      id="portfolio-eean"
+      title="dataviz portfolio"
+      src="https://portfolio-eean.cargo.site/"
+      >
+    </iframe>
+  </div>
+
   <div class="intro_client_work">
     <h3>Web developer & Data scientist</h3>
   </div>
@@ -88,119 +101,6 @@
   </div>
   </div>
 
-  <div class="intro_personal_work">
-    <h3>Dataviz developer</h3>
-  </div>
-  <div class="perso-projects-container">
-  <div class="projects perso">
-    <div class="project_wrapper color_bg">
-      <div class="column_left">
-        <div class="project_info">
-	  <h5><span class="work_title">Data exploration</span></h5>
-        </div>
-        <div class="project_list">
-          <p><a class="project_link" href="https://elle-est-au-nord.github.io/explore-datasets/" target="_blank">
-              Explore datasets</a></p>
-          <p><a class="project_link" href="https://elle-est-au-nord.github.io/dubois-challenge/" target="_blank">
-              Dubois Challenge</a></p>
-          <p><a class="project_link" href="https://elle-est-au-nord.github.io/30daychartchallenge/" target="_blank">
-              #30DayChartChallenge</a></p>
-        </div>
-      </div> <!-- column left -->
-      <div class="column_right">
-        <img alt="Collage of four recent data project visuals" src="/static/img/projects/recent-dataviz-projects.jpg"  style="height: 100%;">
-      </div> <!-- column right -->
-    </div>
-    <div class="project_wrapper color_bg">
-      <div class="column_left">
-        <div class="project_info">
-	  <h5><span class="work_title">Data stories</span></h5>
-        </div>
-        <div class="project_list">
-          <p><a class="project_link" href="https://public.flourish.studio/story/2081220/" target="_blank">
-              Lethal attacks on land & environmental defenders</a>
-          </p>
-          <p><a class="project_link" href="https://stories-lavigne.netlify.app/" target="_blank">
-              Letting go of 2000's Avril Lavigne</a>
-          </p>
-        </div>
-      </div> <!-- column left -->
-      <div class="column_right">
-        <img alt="Attacks on land defenders screenshot" src="/static/img/projects/land-defenders-story.jpg" style="height: 60%;">
-        <img alt="Letting go of 2000's A. Lavigne story screenshot" src="/static/img/projects/avril-lavigne-story.jpg" style="height: 40%;">
-      </div> <!-- column right -->
-    </div>
-    <div class="project_wrapper color_bg">
-      <div class="column_left">
-        <div class="project_info">
-	  <h5><span class="work_title">Tech talks</span></h5>
-        </div>
-        <div class="project_list">
-          <p><a class="project_link" href="https://github.com/Eleonore9/tour_dataviz_python" target="_blank">
-              A tour of data viz in Python</a></p>
-          <p><a class="project_link" href="https://github.com/Eleonore9/pyconse18/blob/master/pyconse2018.pdf" target="_blank">
-              A developer amongst (data) journalists</a></p>
-          <p><a class="project_link" href="https://github.com/Eleonore9/get-articles-meaning" target="_blank">
-              Getting meaning from scientific articles</a></p>
-        </div>
-      </div> <!-- column left -->
-      <div class="column_right">
-        <img alt="A tour of data viz in Python screenshot" src="/static/img/projects/talk-dataviz-python.jpg" style="height: 50%;">
-        <img alt="Getting meaning from scientific articles screenshot" src="/static/img/projects/talk-articles-meaning.jpg" style="height: 50%;">
-      </div> <!-- column right -->
-    </div>
-    <div class="project_wrapper color_bg">
-      <div class="column_left">
-        <div class="project_info">
-	  <h5><span class="work_title">Viz experiments</span></h5>
-        </div>
-        <div class="project_list">
-          <p><a class="project_link" href="https://elle-est-au-nord.github.io/abc/" target="_blank">
-              p5.js viz</a></p>
-          <p><a class="project_link" href="https://elle-est-au-nord.github.io/creative-dataviz/" target="_blank">
-              painting viz</a></p>
-        </div>
-      </div> <!-- column left -->
-      <div class="column_right">
-        <img alt="P5.js data viz projects" src="/static/img/projects/p5js-viz.png" style="height: 50%;">
-        <img alt="Data viz painting project screenshot" src="/static/img/projects/creative-dataviz.jpg" style="height: 50%;">
-      </div> <!-- column right -->
-    </div>
-    <div class="project_wrapper color_bg">
-      <div class="column_left">
-        <div class="project_info">
-	  <h5><span class="work_title">Zines</span></h5>
-        </div>
-        <div class="project_list">
-          <p><a class="project_link" href="https://github.com/Eleonore9/tour_dataviz_python/blob/master/dataviz_minizine.pdf" target="_blank">
-              A tour of data viz in Python</a></p>
-          <p>Data Viz is magic</p>
-          <p>Hej Stockholm</p>
-        </div>
-      </div> <!-- column left -->
-      <div class="column_right">
-        <img alt="A pic of my zines at MozFest 2018" src="/static/img/projects/zines-at-mozfest.jpg" style="height: 50%;">
-        <img alt="Data viz is magic zine screenshot" src="/static/img/projects/dataviz-zine-crop.jpg" style="height: 50%;">
-      </div> <!-- column right -->
-    </div>
-    <div class="project_wrapper color_bg">
-      <div class="column_left">
-        <div class="project_info">
-	  <h5><span class="work_title">Visual arts</span></h5>
-        </div>
-        <div class="project_list">
-          <p>Creative coding</p>
-          <p>Digital collage</p>
-          <p>Mixed media illustration</p>
-        </div>
-      </div> <!-- column left -->
-      <div class="column_right">
-        <img alt="Collage of creative coding and artsy animations" src="/static/img/projects/coding-and-art-animations-collage.gif" style="height: 50%;">
-        <img alt="Collage of digital art by me" src="/static/img/projects/illustrations-and-creative-coding.jpg" style="height: 50%;">
-      </div> <!-- column right -->
-    </div>
-  </div>
- </div>
 </div>
 
 {% endblock %}
