@@ -256,7 +256,7 @@
 }
 .about_me .about_content {
     display: inline-block;
-    margin-top: -42%;
+    margin-top: -33%;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -383,7 +383,7 @@
     }
     .about_me .about_content {
 	text-justify: none;
-	margin-top: -52.7%
+        margin-top: -42%;
     }
     .portfolio .project_wrapper {
 	min-width: 45%;
@@ -400,7 +400,7 @@
     }
     .about_me .about_content {
 	text-justify: none;
-	margin-top: -52.7%
+        margin-top: -42%;
     }
     .portfolio .project_wrapper {
 	min-width: 35%;
